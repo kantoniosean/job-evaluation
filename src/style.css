@@ -23,21 +23,16 @@ body {
     }
 }
 
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+.new-form {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
 }
 
-.evaluation-standards {
+.form-factor {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 25vh;
-    width: 250px;
     flex-direction: column;
+    gap: 0.1rem;
 }
 
 .newFactor {
