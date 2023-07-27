@@ -51,23 +51,25 @@ export default function App() {
 
   return (
     <>
+    <div>
+    </div>
       {/*form for first factor*/}
       <div className="form-factor">
-        <div className="first-factor">
-          <input type="text" id="new-factor" className="input" onChange={handleChange}></input>
-        </div>
+        <div className="header">
+          <div className="first-factor">
+            <input type="text" id="new-factor" className="input" placeholder="Factor Name" onChange={handleChange}></input>
+          </div>
+            <input type="text" id="new-factor" className="total-weight" placeholder="Total Weight %" onChange={handleChange}></input>
+          </div>
         <div className="sub-one">
             <div>
-              <input className="sub-name" onChange={(e=>handleChange(e,i))}/>
+              <input className="sub-name" placeholder="Subfactor name" onChange={(e=>handleChange(e,i))}/>
             </div>
             <div>
-              <input className="sub-weight" onChange={(e=>handleChange(e,i))}/>
+              <input className="sub-weight" placeholder="Subfactor weight %" onChange={(e=>handleChange(e,i))}/>
             </div>
             <div>
               <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-            </div>
-            <div>
-              <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
             </div>
           </div>
           <div className="sub-one">
@@ -79,9 +81,6 @@ export default function App() {
             </div>
             <div>
               <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-            </div>
-            <div>
-              <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
             </div>
           </div>
           {val1.map((data,i)=>{
@@ -96,9 +95,6 @@ export default function App() {
                 <div>
                   <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
                 </div>
-                <div>
-                  <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
-                </div>
               </div>
             )
           })}
@@ -109,21 +105,21 @@ export default function App() {
 
       {/*form for second factor*/}
       <div className="form-factor">
-        <div className="first-factor">
-          <input type="text" id="new-factor" className="input" onChange={handleChange}></input>
-        </div>
+      <div className="header">
+          <div className="first-factor">
+            <input type="text" id="new-factor" className="input" placeholder="Factor Name" onChange={handleChange}></input>
+          </div>
+            <input type="text" id="new-factor" className="total-weight" placeholder="Total Weight %" onChange={handleChange}></input>
+          </div>
         <div className="sub-one">
             <div>
-              <input className="sub-name" onChange={(e=>handleChange(e,i))}/>
+              <input className="sub-name" placeholder="Subfactor name" onChange={(e=>handleChange(e,i))}/>
             </div>
             <div>
-              <input className="sub-weight" onChange={(e=>handleChange(e,i))}/>
+              <input className="sub-weight" placeholder="Subfactor weight %" onChange={(e=>handleChange(e,i))}/>
             </div>
             <div>
               <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-            </div>
-            <div>
-              <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
             </div>
           </div>
           <div className="sub-one">
@@ -135,9 +131,6 @@ export default function App() {
             </div>
             <div>
               <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-            </div>
-            <div>
-              <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
             </div>
           </div>
           {val2.map((data,i)=>{
@@ -152,9 +145,6 @@ export default function App() {
                 <div>
                   <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
                 </div>
-                <div>
-                  <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
-                </div>
               </div>
             )
           })}
@@ -165,21 +155,21 @@ export default function App() {
       
       {/*form for third factor*/}
       <div className="form-factor">
-        <div className="first-factor">
-          <input type="text" id="new-factor" className="input" onChange={handleChange}></input>
-        </div>
+      <div className="header">
+          <div className="first-factor">
+            <input type="text" id="new-factor" className="input" placeholder="Factor Name" onChange={handleChange}></input>
+          </div>
+            <input type="text" id="new-factor" className="total-weight" placeholder="Total Weight %" onChange={handleChange}></input>
+          </div>
         <div className="sub-one">
             <div>
-              <input className="sub-name" onChange={(e=>handleChange(e,i))}/>
+              <input className="sub-name" placeholder="Subfactor name" onChange={(e=>handleChange(e,i))}/>
             </div>
             <div>
-              <input className="sub-weight" onChange={(e=>handleChange(e,i))}/>
+              <input className="sub-weight" placeholder="Subfactor weight %" onChange={(e=>handleChange(e,i))}/>
             </div>
             <div>
               <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-            </div>
-            <div>
-              <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
             </div>
           </div>
           <div className="sub-one">
@@ -191,9 +181,6 @@ export default function App() {
             </div>
             <div>
               <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-            </div>
-            <div>
-              <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
             </div>
           </div>
           {val3.map((data,i)=>{
@@ -208,9 +195,6 @@ export default function App() {
                 <div>
                   <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
                 </div>
-                <div>
-                  <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
-                </div>
               </div>
             )
           })}
@@ -221,21 +205,21 @@ export default function App() {
       
       {/*form for fourth factor*/}
       <div className="form-factor">
-        <div className="first-factor">
-          <input type="text" id="new-factor" className="input" onChange={handleChange}></input>
-        </div>
+      <div className="header">
+          <div className="first-factor">
+            <input type="text" id="new-factor" className="input" placeholder="Factor Name" onChange={handleChange}></input>
+          </div>
+            <input type="text" id="new-factor" className="total-weight" placeholder="Total Weight %" onChange={handleChange}></input>
+          </div>
         <div className="sub-one">
             <div>
-              <input className="sub-name" onChange={(e=>handleChange(e,i))}/>
+              <input className="sub-name" placeholder="Subfactor name" onChange={(e=>handleChange(e,i))}/>
             </div>
             <div>
-              <input className="sub-weight" onChange={(e=>handleChange(e,i))}/>
+              <input className="sub-weight" placeholder="Subfactor weight %" onChange={(e=>handleChange(e,i))}/>
             </div>
             <div>
               <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-            </div>
-            <div>
-              <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
             </div>
           </div>
           <div className="sub-one">
@@ -247,9 +231,6 @@ export default function App() {
             </div>
             <div>
               <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-            </div>
-            <div>
-              <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
             </div>
           </div>
           {val4.map((data,i)=>{
@@ -264,9 +245,6 @@ export default function App() {
                 <div>
                   <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
                 </div>
-                <div>
-                  <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
-                </div>
               </div>
             )
           })}
@@ -274,8 +252,18 @@ export default function App() {
           <button onClick={()=>handleAddFour()}>Add</button>
         </div>
       </div>
-
     <h2>{numbers.number1}</h2>
+    <div className="test-one">
+        <div>
+          <input type="text" className="job-code" onChange={handleChange}></input>
+        </div>
+        <div>
+          <input type="text" className="total-points" onChange={handleChange}></input>
+        </div>
+        <div>
+          <input type="text" className="effective-date" onChange={handleChange}></input>
+        </div>
+      </div>
     </>
   )
 }

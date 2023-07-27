@@ -35,6 +35,20 @@ body {
     gap: 0.1rem;
 } */
 
+.header {
+    display: flex;
+    gap: 65px;
+}
+
+.total-weight {
+    font-size: 20px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    flex-direction: column;   
+    border: 2px;
+    border-radius: 8px;
+}
+
 .first-factor {
     padding-left: 5%;
 }
@@ -74,25 +88,25 @@ body {
 }
 
 .sub-weight {
-    font-size: 23px;
-    padding-top: 4px;
+    font-size: 15px;
+    padding-top: 3px;
     padding-bottom: 1px;
     border: 2px;
     border-radius: 8px;
 }
 
 .sub-point {
-    font-size: 23px;
-    padding-top: 4px;
+    font-size: 15px;
+    padding-top: 3px;
     padding-bottom: 1px;
     border: 2px;
     border-radius: 8px;
 }
 
-.sub-des {
-    font-size: 23px;
-    padding-top: 4px;
-    padding-bottom: 1px;
-    border: 2px;
-    border-radius: 8px;
+.test-one {
+    padding-left: 10%;
+    padding-top: 20px;
+    display: flex;
+    column-gap: 130px;
+
 }
