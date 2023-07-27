@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: var(--gradient);
+    background-color: #f0f1f2;
     background-size: 400%;
     animation: bg-animation 3s infinite alternate;
 }
