@@ -29,12 +29,70 @@ body {
     gap: 0.5rem;
 }
 
-.form-factor {
+/* .form-factor {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
+} */
+
+.first-factor {
+    padding-left: 5%;
+}
+
+.input {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    flex-direction: column;   
+    border: 2px;
+    border-radius: 8px;
+}
+
+.sub-one {
+    padding-left: 10%;
+    padding-top: 20px;
+    display: flex;
+    column-gap: 130px;
 }
 
 .newFactor {
     color: #F9F5F6;
+}
+
+.new-button {
+    padding-left: 13.7%;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+.sub-name {
+    font-size: 23px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    border: 2px;
+    border-radius: 8px;
+}
+
+.sub-weight {
+    font-size: 23px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    border: 2px;
+    border-radius: 8px;
+}
+
+.sub-point {
+    font-size: 23px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    border: 2px;
+    border-radius: 8px;
+}
+
+.sub-des {
+    font-size: 23px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    border: 2px;
+    border-radius: 8px;
 }
