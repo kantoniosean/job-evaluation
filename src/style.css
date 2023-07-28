@@ -9,9 +9,9 @@
 }
 
 body {
-    background-color: #f0f1f2;
     background-size: 400%;
-    animation: bg-animation 3s infinite alternate;
+    background-color: #f0f1f2;
+    /* animation: bg-animation 3s infinite alternate; */
 }
 
 @keyframes bg-animation {
@@ -36,28 +36,28 @@ body {
 } */
 
 .header {
-    display: flex;
-    gap: 65px;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 0.5%;
 }
 
-.total-weight {
-    font-size: 20px;
-    padding-top: 4px;
-    padding-bottom: 1px;
-    flex-direction: column;   
-    border: 2px;
-    border-radius: 8px;
+.footer {
+    display:flex;
+    justify-content: center;
 }
 
 .first-factor {
     padding-left: 5%;
+    padding-bottom: 0.5%;
+    display: flex;
+    column-gap: 120px;
 }
 
 .input {
     font-size: 30px;
     padding-top: 5px;
     padding-bottom: 1px;
-    flex-direction: column;   
+    flex-direction: column;
     border: 2px;
     border-radius: 8px;
 }
@@ -88,25 +88,25 @@ body {
 }
 
 .sub-weight {
-    font-size: 15px;
-    padding-top: 3px;
+    font-size: 23px;
+    padding-top: 4px;
     padding-bottom: 1px;
     border: 2px;
     border-radius: 8px;
 }
 
 .sub-point {
-    font-size: 15px;
-    padding-top: 3px;
+    font-size: 23px;
+    padding-top: 4px;
     padding-bottom: 1px;
     border: 2px;
     border-radius: 8px;
 }
 
-.test-one {
-    padding-left: 10%;
-    padding-top: 20px;
-    display: flex;
-    column-gap: 130px;
-
+.sub-des {
+    font-size: 23px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    border: 2px;
+    border-radius: 8px;
 }
