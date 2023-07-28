@@ -1,5 +1,6 @@
 import "./style.css"
 import React, { useState } from 'react';
+import logo from './workday-logo.png';
 
 export default function App() {
 
@@ -131,15 +132,27 @@ export default function App() {
 
   return (
     <>
+    <div className="design">
+        <img src={logo} className="LOGO" />
+      <div>
+        <input placeholder="Search..." className="search" />
+      </div>
+    </div>
+    <div>
+    <div className="header-div">
+      <h1 className="page-header">     Job Evaluation Page</h1>
+    </div>
+    </div>
       {/*form for first factor*/}
       <div className="form-factor">
+        <div className="test">
         <div className="header">
           <input
             id="new-factor"
             value={jobCode}
             onChange={(e) => setJobCode(e.target.value)}
             type="String"
-            className="input"
+            className="header-input"
             placeholder="Jobcode"
           ></input>
         </div>
@@ -150,7 +163,7 @@ export default function App() {
             value={effectiveDate}
             onChange={(e) => setEffectiveDate(e.target.value)}
             type="number"
-            className="input"
+            className="header-input"
             placeholder="Effective Date"
           ></input>
         </div>
@@ -161,11 +174,11 @@ export default function App() {
             value={totalPoints}
             onChange={(e) => setTotalPoints(e.target.value)}
             type="number"
-            className="input"
+            className="header-input"
             placeholder="Points"
           ></input>
         </div>
-
+        </div>
         {/* Name of First Factor, Weight, and Names of Levels */}
         <div className="first-factor">
           <input type="text"
@@ -316,7 +329,7 @@ export default function App() {
             )
           })}
         <div className="new-button">
-          <button onClick={()=>handleAddOne()}>Add</button>
+          <button className="button" onClick={()=>handleAddOne()}>Add</button>
         </div>
       </div>
 
@@ -578,7 +591,7 @@ export default function App() {
             )
           })}
         <div className="new-button">
-          <button onClick={()=>handleAddOne()}>Add</button>
+          <button className="button" onClick={()=>handleAddOne()}>Add</button>
         </div>
       </div>
       
@@ -741,7 +754,7 @@ export default function App() {
                 )
               })}
           <div className="new-button">
-            <button onClick={()=>handleAddOne()}>Add</button>
+            <button className="button" onClick={()=>handleAddOne()}>Add</button>
           </div>
       </div>
       
@@ -907,7 +920,7 @@ export default function App() {
             })}
 
           <div className="new-button">
-            <button onClick={()=>handleAddOne()}>Add</button>
+            <button className="button" onClick={()=>handleAddOne()}>Add</button>
           </div>
       </div>
 
