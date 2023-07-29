@@ -21,19 +21,16 @@ export default function App() {
 
   const [factorOneSub1, setFactorOneSub1] = useState("")
   const [factorOneSub1Weights, setFactorOneSub1Weights] = useState("")
-  const [factorOneSub1LevelsName, setFactorOneSub1LevelsName] = useState("")
   const [factorOneSub1LevelsNumber, setFactorOneSub1LevelsNumber] = useState("")
   const [factorOneSub1LevelsGrade, setFactorOneSub1LevelsGrade] = useState("")
 
   const [factorOneSub2, setFactorOneSub2] = useState("")
   const [factorOneSub2Weights, setFactorOneSub2Weights] = useState("")
-  const [factorOneSub2LevelsName, setFactorOneSub2LevelsName] = useState("")
   const [factorOneSub2LevelsNumber, setFactorOneSub2LevelsNumber] = useState("")
   const [factorOneSub2LevelsGrade, setFactorOneSub2LevelsGrade] = useState("")
 
   const [factorOneSub3, setFactorOneSub3] = useState("")
   const [factorOneSub3Weights, setFactorOneSub3Weights] = useState("")
-  const [factorOneSub3LevelsName, setFactorOneSub3LevelsName] = useState("")
   const [factorOneSub3LevelsNumber, setFactorOneSub3LevelsNumber] = useState("")
   const [factorOneSub3LevelsGrade, setFactorOneSub3LevelsGrade] = useState("")
 
@@ -42,37 +39,31 @@ export default function App() {
 
   const [factorTwoSub1, setFactorTwoSub1] = useState("")
   const [factorTwoSub1Weights, setFactorTwoSub1Weights] = useState("")
-  const [factorTwoSub1LevelsName, setFactorTwoSub1LevelsName] = useState("")
   const [factorTwoSub1LevelsNumber, setFactorTwoSub1LevelsNumber] = useState("")
   const [factorTwoSub1LevelsGrade, setFactorTwoSub1LevelsGrade] = useState("")
 
   const [factorTwoSub2, setFactorTwoSub2] = useState("")
   const [factorTwoSub2Weights, setFactorTwoSub2Weights] = useState("")
-  const [factorTwoSub2LevelsName, setFactorTwoSub2LevelsName] = useState("")
   const [factorTwoSub2LevelsNumber, setFactorTwoSub2LevelsNumber] = useState("")
   const [factorTwoSub2LevelsGrade, setFactorTwoSub2LevelsGrade] = useState("")
 
   const [factorTwoSub3, setFactorTwoSub3] = useState("")
   const [factorTwoSub3Weights, setFactorTwoSub3Weights] = useState("")
-  const [factorTwoSub3LevelsName, setFactorTwoSub3LevelsName] = useState("")
   const [factorTwoSub3LevelsNumber, setFactorTwoSub3LevelsNumber] = useState("")
   const [factorTwoSub3LevelsGrade, setFactorTwoSub3LevelsGrade] = useState("")
 
   const [factorTwoSub4, setFactorTwoSub4] = useState("")
   const [factorTwoSub4Weights, setFactorTwoSub4Weights] = useState("")
-  const [factorTwoSub4LevelsName, setFactorTwoSub4LevelsName] = useState("")
   const [factorTwoSub4LevelsNumber, setFactorTwoSub4LevelsNumber] = useState("")
   const [factorTwoSub4LevelsGrade, setFactorTwoSub4LevelsGrade] = useState("")
 
   const [factorTwoSub5, setFactorTwoSub5] = useState("")
   const [factorTwoSub5Weights, setFactorTwoSub5Weights] = useState("")
-  const [factorTwoSub5LevelsName, setFactorTwoSub5LevelsName] = useState("")
   const [factorTwoSub5LevelsNumber, setFactorTwoSub5LevelsNumber] = useState("")
   const [factorTwoSub5LevelsGrade, setFactorTwoSub5LevelsGrade] = useState("")
 
   const [factorTwoSub6, setFactorTwoSub6] = useState("")
   const [factorTwoSub6Weights, setFactorTwoSub6Weights] = useState("")
-  const [factorTwoSub6LevelsName, setFactorTwoSub6LevelsName] = useState("")
   const [factorTwoSub6LevelsNumber, setFactorTwoSub6LevelsNumber] = useState("")
   const [factorTwoSub6LevelsGrade, setFactorTwoSub6LevelsGrade] = useState("")
 
@@ -81,19 +72,16 @@ export default function App() {
 
   const [factorThreeSub1, setFactorThreeSub1] = useState("")
   const [factorThreeSub1Weights, setFactorThreeSub1Weights] = useState("")
-  const [factorThreeSub1LevelsName, setFactorThreeSub1LevelsName] = useState("")
   const [factorThreeSub1LevelsNumber, setFactorThreeSub1LevelsNumber] = useState("")
   const [factorThreeSub1LevelsGrade, setFactorThreeSub1LevelsGrade] = useState("")
 
   const [factorThreeSub2, setFactorThreeSub2] = useState("")
   const [factorThreeSub2Weights, setFactorThreeSub2Weights] = useState("")
-  const [factorThreeSub2LevelsName, setFactorThreeSub2LevelsName] = useState("")
   const [factorThreeSub2LevelsNumber, setFactorThreeSub2LevelsNumber] = useState("")
   const [factorThreeSub2LevelsGrade, setFactorThreeSub2LevelsGrade] = useState("")
 
   const [factorThreeSub3, setFactorThreeSub3] = useState("")
   const [factorThreeSub3Weights, setFactorThreeSub3Weights] = useState("")
-  const [factorThreeSub3LevelsName, setFactorThreeSub3LevelsName] = useState("")
   const [factorThreeSub3LevelsNumber, setFactorThreeSub3LevelsNumber] = useState("")
   const [factorThreeSub3LevelsGrade, setFactorThreeSub3LevelsGrade] = useState("")
 
@@ -102,19 +90,16 @@ export default function App() {
 
   const [factorFourSub1, setFactorFourSub1] = useState("")
   const [factorFourSub1Weights, setFactorFourSub1Weights] = useState("")
-  const [factorFourSub1LevelsName, setFactorFourSub1LevelsName] = useState("")
   const [factorFourSub1LevelsNumber, setFactorFourSub1LevelsNumber] = useState("")
   const [factorFourSub1LevelsGrade, setFactorFourSub1LevelsGrade] = useState("")
 
   const [factorFourSub2, setFactorFourSub2] = useState("")
   const [factorFourSub2Weights, setFactorFourSub2Weights] = useState("")
-  const [factorFourSub2LevelsName, setFactorFourSub2LevelsName] = useState("")
   const [factorFourSub2LevelsNumber, setFactorFourSub2LevelsNumber] = useState("")
   const [factorFourSub2LevelsGrade, setFactorFourSub2LevelsGrade] = useState("")
 
   const [factorFourSub3, setFactorFourSub3] = useState("")
   const [factorFourSub3Weights, setFactorFourSub3Weights] = useState("")
-  const [factorFourSub3LevelsName, setFactorFourSub3LevelsName] = useState("")
   const [factorFourSub3LevelsNumber, setFactorFourSub3LevelsNumber] = useState("")
   const [factorFourSub3LevelsGrade, setFactorFourSub3LevelsGrade] = useState("")
 
@@ -230,15 +215,17 @@ export default function App() {
                     placeholder="Sub-factor Weight"
                   />
                 </div>
+                {/* 
                 <div>
                   <input
                     className="sub-name"
                     value={factorOneSub1LevelsName}
                     onChange={(e) => setFactorOneSub1LevelsName(e.target.value)}
-                    type="number"
+                    type="String"
                     placeholder="Sub-factor Level Name"
                   />
                 </div>
+                */}
                 <div>
                   <input
                     className="sub-name"
@@ -255,6 +242,7 @@ export default function App() {
                     onChange={(e) => setFactorOneSub1LevelsGrade(e.target.value)}
                     type="number"
                     placeholder="Sub-factor Level Grade"
+                    default="0"
                   />
                 </div>
             
@@ -286,15 +274,6 @@ export default function App() {
                 <div>
                   <input
                     className="sub-name"
-                    value={factorOneSub2LevelsName}
-                    onChange={(e) => setFactorOneSub2LevelsName(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
                     value={factorOneSub2LevelsNumber}
                     onChange={(e) => setFactorOneSub2LevelsNumber(e.target.value)}
                     type="number"
@@ -308,6 +287,7 @@ export default function App() {
                     onChange={(e) => setFactorOneSub2LevelsGrade(e.target.value)}
                     type="number"
                     placeholder="Sub-factor Level Grade"
+                    default="0"
                   />
                 </div>
             
@@ -339,15 +319,6 @@ export default function App() {
                 <div>
                   <input
                     className="sub-name"
-                    value={factorOneSub3LevelsName}
-                    onChange={(e) => setFactorOneSub3LevelsName(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
                     value={factorOneSub3LevelsNumber}
                     onChange={(e) => setFactorOneSub3LevelsNumber(e.target.value)}
                     type="number"
@@ -361,6 +332,7 @@ export default function App() {
                     onChange={(e) => setFactorOneSub3LevelsGrade(e.target.value)}
                     type="number"
                     placeholder="Sub-factor Level Grade"
+                    default="0"
                   />
                 </div>
             
@@ -438,15 +410,6 @@ export default function App() {
                 <div>
                   <input
                     className="sub-name"
-                    value={factorTwoSub1LevelsName}
-                    onChange={(e) => setFactorTwoSub1LevelsName(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
                     value={factorTwoSub1LevelsNumber}
                     onChange={(e) => setFactorTwoSub1LevelsNumber(e.target.value)}
                     type="number"
@@ -460,6 +423,7 @@ export default function App() {
                     onChange={(e) => setFactorTwoSub1LevelsGrade(e.target.value)}
                     type="number"
                     placeholder="Sub-factor Level Grade"
+                    default="0"
                   />
                 </div>
             
@@ -491,15 +455,6 @@ export default function App() {
                 <div>
                   <input
                     className="sub-name"
-                    value={factorTwoSub2LevelsName}
-                    onChange={(e) => setFactorTwoSub2LevelsName(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
                     value={factorTwoSub2LevelsNumber}
                     onChange={(e) => setFactorTwoSub2LevelsNumber(e.target.value)}
                     type="number"
@@ -513,6 +468,7 @@ export default function App() {
                     onChange={(e) => setFactorTwoSub2LevelsGrade(e.target.value)}
                     type="number"
                     placeholder="Sub-factor Level Grade"
+                    default="0"
                   />
                 </div>
             
@@ -532,6 +488,7 @@ export default function App() {
                     placeholder="Sub-factor"
                   />
                 </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -541,15 +498,7 @@ export default function App() {
                     placeholder="Sub-factor Weight"
                   />
                 </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub3LevelsName}
-                    onChange={(e) => setFactorTwoSub3LevelsName(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -559,6 +508,7 @@ export default function App() {
                     placeholder="Sub-factor Max Level"
                   />
                 </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -566,6 +516,7 @@ export default function App() {
                     onChange={(e) => setFactorTwoSub3LevelsGrade(e.target.value)}
                     type="number"
                     placeholder="Sub-factor Level Grade"
+                    default="0"
                   />
                 </div>
             
@@ -585,6 +536,7 @@ export default function App() {
                     placeholder="Sub-factor"
                   />
                 </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -594,15 +546,7 @@ export default function App() {
                     placeholder="Sub-factor Weight"
                   />
                 </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub4LevelsName}
-                    onChange={(e) => setFactorTwoSub4LevelsName(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -612,6 +556,7 @@ export default function App() {
                     placeholder="Sub-factor Max Level"
                   />
                 </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -619,6 +564,7 @@ export default function App() {
                     onChange={(e) => setFactorTwoSub4LevelsGrade(e.target.value)}
                     type="number"
                     placeholder="Sub-factor Level Grade"
+                    default="0"
                   />
                 </div>
             
@@ -638,6 +584,7 @@ export default function App() {
                     placeholder="Sub-factor"
                   />
                 </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -647,15 +594,7 @@ export default function App() {
                     placeholder="Sub-factor Weight"
                   />
                 </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub5LevelsName}
-                    onChange={(e) => setFactorTwoSub5LevelsName(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -665,6 +604,7 @@ export default function App() {
                     placeholder="Sub-factor Max Level"
                   />
                 </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -672,6 +612,7 @@ export default function App() {
                     onChange={(e) => setFactorTwoSub5LevelsGrade(e.target.value)}
                     type="number"
                     placeholder="Sub-factor Level Grade"
+                    default="0"
                   />
                 </div>
             
@@ -691,6 +632,7 @@ export default function App() {
                     placeholder="Sub-factor"
                   />
                 </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -700,15 +642,7 @@ export default function App() {
                     placeholder="Sub-factor Weight"
                   />
                 </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub6LevelsName}
-                    onChange={(e) => setFactorTwoSub6LevelsName(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -718,6 +652,7 @@ export default function App() {
                     placeholder="Sub-factor Max Level"
                   />
                 </div>
+
                 <div>
                   <input
                     className="sub-name"
@@ -725,6 +660,7 @@ export default function App() {
                     onChange={(e) => setFactorTwoSub6LevelsGrade(e.target.value)}
                     type="number"
                     placeholder="Sub-factor Level Grade"
+                    default="0"
                   />
                 </div>
             
@@ -805,16 +741,6 @@ export default function App() {
             <div>
               <input
                 className="sub-name"
-                value={factorThreeSub1LevelsName}
-                onChange={(e) => setFactorThreeSub1LevelsName(e.target.value)}
-                type="String"
-                placeholder="Sub-factor Level Name"
-              />
-            </div>
-
-            <div>
-              <input
-                className="sub-name"
                 value={factorThreeSub1LevelsNumber}
                 onChange={(e) => setFactorThreeSub1LevelsNumber(e.target.value)}
                 type="number"
@@ -829,6 +755,7 @@ export default function App() {
                 onChange={(e) => setFactorThreeSub1LevelsGrade(e.target.value)}
                 type="number"
                 placeholder="Sub-factor Level Grade"
+                default="0"
               />
             </div>
             
@@ -862,16 +789,6 @@ export default function App() {
             <div>
               <input
                 className="sub-name"
-                value={factorThreeSub2LevelsName}
-                onChange={(e) => setFactorThreeSub2LevelsName(e.target.value)}
-                type="String"
-                placeholder="Sub-factor Level Name"
-              />
-            </div>
-
-            <div>
-              <input
-                className="sub-name"
                 value={factorThreeSub2LevelsNumber}
                 onChange={(e) => setFactorThreeSub2LevelsNumber(e.target.value)}
                 type="number"
@@ -886,6 +803,7 @@ export default function App() {
                 onChange={(e) => setFactorThreeSub2LevelsGrade(e.target.value)}
                 type="number"
                 placeholder="Sub-factor Level Grade"
+                default="0"
               />
             </div>
             
@@ -917,15 +835,6 @@ export default function App() {
                 <div>
                   <input
                     className="sub-name"
-                    value={factorThreeSub3LevelsName}
-                    onChange={(e) => setFactorThreeSub3LevelsName(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
                     value={factorThreeSub3LevelsNumber}
                     onChange={(e) => setFactorThreeSub3LevelsNumber(e.target.value)}
                     type="number"
@@ -939,6 +848,7 @@ export default function App() {
                     onChange={(e) => setFactorThreeSub3LevelsGrade(e.target.value)}
                     type="number"
                     placeholder="Sub-factor Level Grade"
+                    default="0"
                   />
                 </div>
             
@@ -1017,36 +927,28 @@ export default function App() {
             </div>
 
             <div>
-                  <input
-                    className="sub-name"
-                    value={factorFourSub1LevelsName}
-                    onChange={(e) => setFactorFourSub1LevelsName(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorFourSub1LevelsNumber}
-                    onChange={(e) => setFactorFourSub1LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorFourSub1LevelsGrade}
-                    onChange={(e) => setFactorFourSub1LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                  />
-                </div>
-            
-                <h2>
-                  {((((totalPoints * (factorFourWeight * .01)) * factorFourSub1Weights * .01))/factorFourSub1LevelsNumber) * factorFourSub1LevelsGrade}
-                </h2>
+              <input
+                className="sub-name"
+                value={factorFourSub1LevelsNumber}
+                onChange={(e) => setFactorFourSub1LevelsNumber(e.target.value)}
+                type="number"
+                placeholder="Sub-factor Max Level"
+              />
+            </div>
+            <div>
+              <input
+                className="sub-name"
+                value={factorFourSub1LevelsGrade}
+                onChange={(e) => setFactorFourSub1LevelsGrade(e.target.value)}
+                type="number"
+                placeholder="Sub-factor Level Grade"
+                default="0"
+              />
+            </div>
+        
+            <h2>
+              {((((totalPoints * (factorFourWeight * .01)) * factorFourSub1Weights * .01))/factorFourSub1LevelsNumber) * factorFourSub1LevelsGrade}
+            </h2>
           </div>
 
 
@@ -1072,36 +974,28 @@ export default function App() {
             </div>
 
             <div>
-                  <input
-                    className="sub-name"
-                    value={factorFourSub2LevelsName}
-                    onChange={(e) => setFactorFourSub2LevelsName(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorFourSub2LevelsNumber}
-                    onChange={(e) => setFactorFourSub2LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorFourSub2LevelsGrade}
-                    onChange={(e) => setFactorFourSub2LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                  />
-                </div>
-            
-                <h2>
-                  {((((totalPoints * (factorFourWeight * .01)) * factorFourSub2Weights * .01))/factorFourSub2LevelsNumber) * factorFourSub2LevelsGrade}
-                </h2>
+              <input
+                className="sub-name"
+                value={factorFourSub2LevelsNumber}
+                onChange={(e) => setFactorFourSub2LevelsNumber(e.target.value)}
+                type="number"
+                placeholder="Sub-factor Max Level"
+              />
+            </div>
+            <div>
+              <input
+                className="sub-name"
+                value={factorFourSub2LevelsGrade}
+                onChange={(e) => setFactorFourSub2LevelsGrade(e.target.value)}
+                type="number"
+                placeholder="Sub-factor Level Grade"
+                default="0"
+              />
+            </div>
+        
+            <h2>
+              {((((totalPoints * (factorFourWeight * .01)) * factorFourSub2Weights * .01))/factorFourSub2LevelsNumber) * factorFourSub2LevelsGrade}
+            </h2>
           </div>
 
 
@@ -1125,16 +1019,6 @@ export default function App() {
                 placeholder="Sub-factor Weight"
               />
             </div>
-                
-            <div>
-              <input
-                className="sub-name"
-                value={factorFourSub3LevelsName}
-                onChange={(e) => setFactorFourSub3LevelsName(e.target.value)}
-                type="String"
-                placeholder="Sub-factor Level Name"
-              />
-            </div>
 
             <div>
               <input
@@ -1153,6 +1037,7 @@ export default function App() {
                 onChange={(e) => setFactorFourSub3LevelsGrade(e.target.value)}
                 type="number"
                 placeholder="Sub-factor Level Grade"
+                default="0"
                 />
             </div>
             
@@ -1186,26 +1071,27 @@ export default function App() {
           </div>
       </div>
 
+
       <h1 className="footer">
             { 
-              (((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade) +
-              (((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade) +
-              (((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade) +
+              ((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade +
+              ((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade +
+              ((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade +
+              
+              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade +
+              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade +
+              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade +
+              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub4Weights * .01))/factorTwoSub4LevelsNumber) * factorTwoSub4LevelsGrade +
+              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub5Weights * .01))/factorTwoSub5LevelsNumber) * factorTwoSub5LevelsGrade +
+              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub6Weights * .01))/factorTwoSub6LevelsNumber) * factorTwoSub6LevelsGrade +
+              
+              ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade +
+              ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade +
+              ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub3Weights * .01))/factorThreeSub3LevelsNumber) * factorThreeSub3LevelsGrade +
 
-              (((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade) + 
-              (((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade) +
-              (((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade) +
-              (((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub4Weights * .01))/factorTwoSub4LevelsNumber) * factorTwoSub4LevelsGrade) +
-              (((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub5Weights * .01))/factorTwoSub5LevelsNumber) * factorTwoSub5LevelsGrade) +
-              (((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub6Weights * .01))/factorTwoSub6LevelsNumber) * factorTwoSub6LevelsGrade) +
-
-              (((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade) +
-              (((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade) +
-              (((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub3Weights * .01))/factorThreeSub3LevelsNumber) * factorThreeSub3LevelsGrade) +
-
-              (((((totalPoints * (factorFourWeight * .01)) * factorFourSub1Weights * .01))/factorFourSub1LevelsNumber) * factorFourSub1LevelsGrade) +
-              (((((totalPoints * (factorFourWeight * .01)) * factorFourSub2Weights * .01))/factorFourSub2LevelsNumber) * factorFourSub2LevelsGrade) +
-              (((((totalPoints * (factorFourWeight * .01)) * factorFourSub3Weights * .01))/factorFourSub3LevelsNumber) * factorFourSub3LevelsGrade)
+              ((((totalPoints * (factorFourWeight * .01)) * factorFourSub1Weights * .01))/factorFourSub1LevelsNumber) * factorFourSub1LevelsGrade +
+              ((((totalPoints * (factorFourWeight * .01)) * factorFourSub2Weights * .01))/factorFourSub2LevelsNumber) * factorFourSub2LevelsGrade +
+              ((((totalPoints * (factorFourWeight * .01)) * factorFourSub3Weights * .01))/factorFourSub3LevelsNumber) * factorFourSub3LevelsGrade
             }
       </h1>
     </>
