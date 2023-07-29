@@ -12,6 +12,7 @@ export default function App() {
 
   const [val4, setVal4] = useState([]);
 
+  const [jobName, setJobName] = useState("")
   const [jobCode, setJobCode] = useState("")
   const [effectiveDate, setEffectiveDate] = useState("")
   const [totalPoints, setTotalPoints] = useState("")
@@ -127,6 +128,79 @@ export default function App() {
     setData({ ...numbers, [e.target.value]: e.target.value });
   };
 
+  function jobCodeEngineer(){
+    setJobName("Mechanical Engineer");
+    setJobCode("123");
+    setEffectiveDate("123");
+    setTotalPoints("1000");
+
+    setFactorOne("Skills");
+    setFactorOneWeight("35");
+
+    setFactorOneSub1("Education");
+    setFactorOneSub1Weights("40");
+    setFactorOneSub1LevelsNumber("3");
+
+    setFactorOneSub2("Licensure and Certifications");
+    setFactorOneSub2Weights("30");
+    setFactorOneSub2LevelsNumber("2");
+
+    setFactorOneSub3("Experience");
+    setFactorOneSub3Weights("30");
+    setFactorOneSub3LevelsNumber("3");
+    
+    setFactorTwo("Responsibility");
+    setFactorTwoWeight("30");
+
+    setFactorTwoSub1("Safety");
+    setFactorTwoSub1Weights("40");
+    setFactorTwoSub1LevelsNumber("3");
+
+    setFactorTwoSub2("Degree of Independence");
+    setFactorTwoSub2Weights("40");
+    setFactorTwoSub2LevelsNumber("3");
+
+    setFactorTwoSub3("Supervisory");
+    setFactorTwoSub3Weights("20");
+    setFactorTwoSub3LevelsNumber("3");
+
+    setFactorTwoSub4LevelsNumber("1");
+
+    setFactorTwoSub5LevelsNumber("1");
+
+    setFactorTwoSub6LevelsNumber("1");
+
+    setFactorThree("Effort and Demand");
+    setFactorThreeWeight("20");
+
+    setFactorThreeSub1("Mental");
+    setFactorThreeSub1Weights("80");
+    setFactorThreeSub1LevelsNumber("3");
+
+    setFactorThreeSub2("Physical");
+    setFactorThreeSub2Weights("20");
+    setFactorThreeSub2LevelsNumber("3");
+
+    setFactorThreeSub3("");
+    setFactorThreeSub3Weights("");
+    setFactorThreeSub3LevelsNumber("1");
+
+    setFactorFour("Working Conditions");
+    setFactorFourWeight("15");
+
+    setFactorFourSub1("Locations");
+    setFactorFourSub1Weights("50");
+    setFactorFourSub1LevelsNumber("3");
+
+    setFactorFourSub2("Hazards");
+    setFactorFourSub2Weights("50");
+    setFactorFourSub2LevelsNumber("3");
+
+    setFactorFourSub3("");
+    setFactorFourSub3Weights("");
+    setFactorFourSub3LevelsNumber("1");
+  }
+
   return (
     <>
     <div className="design">
@@ -139,10 +213,24 @@ export default function App() {
     <div className="header-div">
       <h1 className="page-header">     Job Evaluation Page</h1>
     </div>
+    <button className="button" onClick={jobCodeEngineer}>
+      Mechanical Engineer Job Profile
+    </button>
     </div>
       {/*form for first factor*/}
       <div className="form-factor">
         <div className="test">
+        <div className="header">
+          <input
+            id="new-factor"
+            value={jobName}
+            onChange={(e) => setJobName(e.target.value)}
+            type="String"
+            className="header-input"
+            placeholder="Job Name"
+          ></input>
+        </div>
+
         <div className="header">
           <input
             id="new-factor"
@@ -247,7 +335,7 @@ export default function App() {
                 </div>
             
                 <h2>
-                  {((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade}
+                  {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade)}
                 </h2>
               </div>
 
@@ -292,7 +380,7 @@ export default function App() {
                 </div>
             
                 <h2>
-                  {((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade}
+                  {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade)}
                 </h2>
               </div>
 
@@ -337,7 +425,7 @@ export default function App() {
                 </div>
             
                 <h2>
-                  {((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade}
+                  {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade)}
                 </h2>
               </div>
 
@@ -428,7 +516,7 @@ export default function App() {
                 </div>
             
                 <h2>
-                  {((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade}
+                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade)}
                 </h2>
               </div>
 
@@ -473,7 +561,7 @@ export default function App() {
                 </div>
             
                 <h2>
-                  {((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade}
+                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade)}
                 </h2>
               </div>
 
@@ -521,7 +609,7 @@ export default function App() {
                 </div>
             
                 <h2>
-                  {((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade}
+                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade)}
                 </h2>
               </div>
 
@@ -569,7 +657,7 @@ export default function App() {
                 </div>
             
                 <h2>
-                  {((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub4Weights * .01))/factorTwoSub4LevelsNumber) * factorTwoSub4LevelsGrade}
+                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub4Weights * .01))/factorTwoSub4LevelsNumber) * factorTwoSub4LevelsGrade)}
                 </h2>
               </div>
 
@@ -617,7 +705,7 @@ export default function App() {
                 </div>
             
                 <h2>
-                  {((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub5Weights * .01))/factorTwoSub5LevelsNumber) * factorTwoSub5LevelsGrade}
+                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub5Weights * .01))/factorTwoSub5LevelsNumber) * factorTwoSub5LevelsGrade)}
                 </h2>
               </div>
 
@@ -665,7 +753,7 @@ export default function App() {
                 </div>
             
                 <h2>
-                  {((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub6Weights * .01))/factorTwoSub6LevelsNumber) * factorTwoSub6LevelsGrade}
+                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub6Weights * .01))/factorTwoSub6LevelsNumber) * factorTwoSub6LevelsGrade)}
                 </h2>
               </div>
 
@@ -760,7 +848,7 @@ export default function App() {
             </div>
             
             <h2>
-              {((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade}
+              {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade)}
             </h2>
           </div>
 
@@ -808,7 +896,7 @@ export default function App() {
             </div>
             
             <h2>
-              {((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade}
+              {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade)}
             </h2>
           </div>
 
@@ -853,7 +941,7 @@ export default function App() {
                 </div>
             
                 <h2>
-                  {((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub3Weights * .01))/factorThreeSub3LevelsNumber) * factorThreeSub3LevelsGrade}
+                  {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub3Weights * .01))/factorThreeSub3LevelsNumber) * factorThreeSub3LevelsGrade)}
                 </h2>
               </div>
 
@@ -947,7 +1035,7 @@ export default function App() {
             </div>
         
             <h2>
-              {((((totalPoints * (factorFourWeight * .01)) * factorFourSub1Weights * .01))/factorFourSub1LevelsNumber) * factorFourSub1LevelsGrade}
+              {Math.floor(((((totalPoints * (factorFourWeight * .01)) * factorFourSub1Weights * .01))/factorFourSub1LevelsNumber) * factorFourSub1LevelsGrade)}
             </h2>
           </div>
 
@@ -994,7 +1082,7 @@ export default function App() {
             </div>
         
             <h2>
-              {((((totalPoints * (factorFourWeight * .01)) * factorFourSub2Weights * .01))/factorFourSub2LevelsNumber) * factorFourSub2LevelsGrade}
+              {Math.floor(((((totalPoints * (factorFourWeight * .01)) * factorFourSub2Weights * .01))/factorFourSub2LevelsNumber) * factorFourSub2LevelsGrade)}
             </h2>
           </div>
 
@@ -1042,7 +1130,7 @@ export default function App() {
             </div>
             
             <h2>
-              {((((totalPoints * (factorFourWeight * .01)) * factorFourSub3Weights * .01))/factorFourSub3LevelsNumber) * factorFourSub3LevelsGrade}
+              {Math.floor(((((totalPoints * (factorFourWeight * .01)) * factorFourSub3Weights * .01))/factorFourSub3LevelsNumber) * factorFourSub3LevelsGrade)}
             </h2>
           </div>
 
@@ -1073,25 +1161,27 @@ export default function App() {
 
 
       <h1 className="footer">
-            { 
-              ((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade +
-              ((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade +
-              ((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade +
-              
-              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade +
-              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade +
-              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade +
-              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub4Weights * .01))/factorTwoSub4LevelsNumber) * factorTwoSub4LevelsGrade +
-              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub5Weights * .01))/factorTwoSub5LevelsNumber) * factorTwoSub5LevelsGrade +
-              ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub6Weights * .01))/factorTwoSub6LevelsNumber) * factorTwoSub6LevelsGrade +
-              
-              ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade +
-              ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade +
-              ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub3Weights * .01))/factorThreeSub3LevelsNumber) * factorThreeSub3LevelsGrade +
+            {
+              Math.floor(
+                ((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade +
+                ((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade +
+                ((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade +
+                
+                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade +
+                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade +
+                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade +
+                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub4Weights * .01))/factorTwoSub4LevelsNumber) * factorTwoSub4LevelsGrade +
+                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub5Weights * .01))/factorTwoSub5LevelsNumber) * factorTwoSub5LevelsGrade +
+                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub6Weights * .01))/factorTwoSub6LevelsNumber) * factorTwoSub6LevelsGrade +
+                
+                ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade +
+                ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade +
+                ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub3Weights * .01))/factorThreeSub3LevelsNumber) * factorThreeSub3LevelsGrade +
 
-              ((((totalPoints * (factorFourWeight * .01)) * factorFourSub1Weights * .01))/factorFourSub1LevelsNumber) * factorFourSub1LevelsGrade +
-              ((((totalPoints * (factorFourWeight * .01)) * factorFourSub2Weights * .01))/factorFourSub2LevelsNumber) * factorFourSub2LevelsGrade +
-              ((((totalPoints * (factorFourWeight * .01)) * factorFourSub3Weights * .01))/factorFourSub3LevelsNumber) * factorFourSub3LevelsGrade
+                ((((totalPoints * (factorFourWeight * .01)) * factorFourSub1Weights * .01))/factorFourSub1LevelsNumber) * factorFourSub1LevelsGrade +
+                ((((totalPoints * (factorFourWeight * .01)) * factorFourSub2Weights * .01))/factorFourSub2LevelsNumber) * factorFourSub2LevelsGrade +
+                ((((totalPoints * (factorFourWeight * .01)) * factorFourSub3Weights * .01))/factorFourSub3LevelsNumber) * factorFourSub3LevelsGrade
+              )
             }
       </h1>
     </>
