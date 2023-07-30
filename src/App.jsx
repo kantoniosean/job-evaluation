@@ -130,8 +130,8 @@ export default function App() {
 
   function jobCodeEngineer(){
     setJobName("Mechanical Engineer");
-    setJobCode("123");
-    setEffectiveDate("123");
+    setJobCode("");
+    setEffectiveDate("");
     setTotalPoints("1000");
 
     setFactorOne("Skills");
@@ -201,6 +201,79 @@ export default function App() {
     setFactorFourSub3LevelsNumber("1");
   }
 
+  function jobCodeExecutive(){
+    setJobName("Executive Director");
+    setJobCode("");
+    setEffectiveDate("");
+    setTotalPoints("1000");
+
+    setFactorOne("Skills");
+    setFactorOneWeight("30");
+
+    setFactorOneSub1("Education");
+    setFactorOneSub1Weights("30");
+    setFactorOneSub1LevelsNumber("2");
+
+    setFactorOneSub2("Experience");
+    setFactorOneSub2Weights("50");
+    setFactorOneSub2LevelsNumber("3");
+
+    setFactorOneSub3("Problem Solving");
+    setFactorOneSub3Weights("20");
+    setFactorOneSub3LevelsNumber("2");
+    
+    setFactorTwo("Responsibility");
+    setFactorTwoWeight("40");
+
+    setFactorTwoSub1("Supervisory");
+    setFactorTwoSub1Weights("50");
+    setFactorTwoSub1LevelsNumber("3");
+
+    setFactorTwoSub2("Fiscal");
+    setFactorTwoSub2Weights("20");
+    setFactorTwoSub2LevelsNumber("2");
+
+    setFactorTwoSub3("Impact of Job");
+    setFactorTwoSub3Weights("30");
+    setFactorTwoSub3LevelsNumber("3");
+
+    setFactorTwoSub4LevelsNumber("1");
+
+    setFactorTwoSub5LevelsNumber("1");
+
+    setFactorTwoSub6LevelsNumber("1");
+
+    setFactorThree("Effort and Demand");
+    setFactorThreeWeight("20");
+
+    setFactorThreeSub1("Mental");
+    setFactorThreeSub1Weights("70");
+    setFactorThreeSub1LevelsNumber("3");
+
+    setFactorThreeSub2("Hours and Shifts");
+    setFactorThreeSub2Weights("30");
+    setFactorThreeSub2LevelsNumber("2");
+
+    setFactorThreeSub3("");
+    setFactorThreeSub3Weights("");
+    setFactorThreeSub3LevelsNumber("1");
+
+    setFactorFour("Working Conditions");
+    setFactorFourWeight("10");
+
+    setFactorFourSub1("Locations");
+    setFactorFourSub1Weights("50");
+    setFactorFourSub1LevelsNumber("3");
+
+    setFactorFourSub2("Physical");
+    setFactorFourSub2Weights("50");
+    setFactorFourSub2LevelsNumber("2");
+
+    setFactorFourSub3("");
+    setFactorFourSub3Weights("");
+    setFactorFourSub3LevelsNumber("1");
+  }
+
   return (
     <>
     <div className="design">
@@ -216,6 +289,11 @@ export default function App() {
     <button className="button" onClick={jobCodeEngineer}>
       Mechanical Engineer Job Profile
     </button>
+
+    <button className="button" onClick={jobCodeExecutive}>
+      Executive Director Job Profile
+    </button>
+
     </div>
       {/*form for first factor*/}
       <div className="form-factor">
