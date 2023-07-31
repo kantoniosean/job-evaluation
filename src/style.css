@@ -32,7 +32,6 @@ body {
     /* animation: bg-animation 3s infinite alternate; */
 }
 
-
 .header-div {
     padding-top: 0.1%;
     padding-bottom: 0.1%;
@@ -72,7 +71,7 @@ body {
     justify-content: center;
 }
 
-.first-factor {
+.main-factor {
     padding-left: 5%;
     padding-bottom: 0.5%;
     display: flex;

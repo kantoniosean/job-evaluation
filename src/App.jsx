@@ -4,14 +4,6 @@ import logo from './workday-logo.png';
 
 export default function App() {
 
-  const [val1, setVal1] = useState([]);
-
-  const [val2, setVal2] = useState([]);
-
-  const [val3, setVal3] = useState([]);
-
-  const [val4, setVal4] = useState([]);
-
   const [jobName, setJobName] = useState("")
   const [jobCode, setJobCode] = useState("")
   const [effectiveDate, setEffectiveDate] = useState("")
@@ -104,106 +96,89 @@ export default function App() {
   const [factorFourSub3LevelsNumber, setFactorFourSub3LevelsNumber] = useState("")
   const [factorFourSub3LevelsGrade, setFactorFourSub3LevelsGrade] = useState("")
 
-  const handleAddOne=()=>{
-    const newIn=[...val1, []]
-    setVal1(newIn)
-  }
-
-  const handleAddTwo=()=>{
-    const newIn=[...val2, []]
-    setVal2(newIn)
-  }
-
-  const handleAddThree=()=>{
-    const newIn=[...val3, []]
-    setVal3(newIn)
-  }
-
-  const handleAddFour=()=>{
-    const newIn=[...val4, []]
-    setVal4(newIn)
-  }
-
-  const handleChange = (e) => {
-    setData({ ...numbers, [e.target.value]: e.target.value });
-  };
-
-  function jobCodeEngineer(){
+  function jobProfileEngineer(){
     setJobName("Mechanical Engineer");
-    setJobCode("");
+    setJobCode("Eng123");
     setEffectiveDate("");
     setTotalPoints("1000");
 
     setFactorOne("Skills");
-    setFactorOneWeight("35");
+    setFactorOneWeight("55");
 
     setFactorOneSub1("Education");
     setFactorOneSub1Weights("40");
     setFactorOneSub1LevelsNumber("3");
 
+    document.getElementById("factorOneSub1Select").innerHTML=
+      
+       `<option value="1">BS</option>
+        <option value="2">Masters</option>
+        <option value="3">PHD</option>`
+      
     setFactorOneSub2("Licensure and Certifications");
     setFactorOneSub2Weights("30");
     setFactorOneSub2LevelsNumber("2");
 
+    document.getElementById("factorOneSub2Select").innerHTML=
+      
+        `<option value="1">Louisiana License</option>
+        <option value="2">Professional Engineer (PE)</option>`
+
     setFactorOneSub3("Experience");
     setFactorOneSub3Weights("30");
     setFactorOneSub3LevelsNumber("3");
+
+    document.getElementById("factorOneSub3Select").innerHTML=
+      
+        `<option value="0">None of the above</option>
+        <option value="1">4 years</option>
+        <option value="2">5 years</option>
+        <option value="3">6 years</option>`
     
     setFactorTwo("Responsibility");
-    setFactorTwoWeight("30");
+    setFactorTwoWeight("45");
 
     setFactorTwoSub1("Safety");
     setFactorTwoSub1Weights("40");
     setFactorTwoSub1LevelsNumber("3");
 
+    document.getElementById("factorTwoSub1Select").innerHTML=
+      
+        `<option value="1">Low Safety Needs</option>
+        <option value="2">Medium Safety Needs</option>
+        <option value="3">High Safety Needs</option>`
+
     setFactorTwoSub2("Degree of Independence");
     setFactorTwoSub2Weights("40");
     setFactorTwoSub2LevelsNumber("3");
+
+    document.getElementById("factorTwoSub2Select").innerHTML=
+      
+        `<option value="1">Worker Drone</option>
+        <option value="2">Middle Management</option>
+        <option value="3">Autonomous Worker</option>`
 
     setFactorTwoSub3("Supervisory");
     setFactorTwoSub3Weights("20");
     setFactorTwoSub3LevelsNumber("3");
 
-    setFactorTwoSub4LevelsNumber("1");
+    document.getElementById("factorTwoSub3Select").innerHTML=
+      
+        `<option value="1">Lower End</option>
+        <option value="2">Middle Management</option>
+        <option value="3">Top of the Org Chart</option>`
 
-    setFactorTwoSub5LevelsNumber("1");
+    document.getElementById("third-factor").style.display = "none"
 
-    setFactorTwoSub6LevelsNumber("1");
+    setFactorThreeSub1LevelsNumber("1");
 
-    setFactorThree("Effort and Demand");
-    setFactorThreeWeight("20");
+    setFactorThreeSub2LevelsNumber("1");
 
-    setFactorThreeSub1("Mental");
-    setFactorThreeSub1Weights("80");
-    setFactorThreeSub1LevelsNumber("3");
-
-    setFactorThreeSub2("Physical");
-    setFactorThreeSub2Weights("20");
-    setFactorThreeSub2LevelsNumber("3");
-
-    setFactorThreeSub3("");
-    setFactorThreeSub3Weights("");
-    setFactorThreeSub3LevelsNumber("1");
-
-    setFactorFour("Working Conditions");
-    setFactorFourWeight("15");
-
-    setFactorFourSub1("Locations");
-    setFactorFourSub1Weights("50");
-    setFactorFourSub1LevelsNumber("3");
-
-    setFactorFourSub2("Hazards");
-    setFactorFourSub2Weights("50");
-    setFactorFourSub2LevelsNumber("3");
-
-    setFactorFourSub3("");
-    setFactorFourSub3Weights("");
-    setFactorFourSub3LevelsNumber("1");
   }
 
-  function jobCodeExecutive(){
+  function jobProfileExecutive(){
     setJobName("Executive Director");
-    setJobCode("");
+    setJobCode("Exe123");
     setEffectiveDate("");
     setTotalPoints("1000");
 
@@ -214,682 +189,381 @@ export default function App() {
     setFactorOneSub1Weights("30");
     setFactorOneSub1LevelsNumber("2");
 
-    setFactorOneSub2("Experience");
-    setFactorOneSub2Weights("50");
-    setFactorOneSub2LevelsNumber("3");
+    document.getElementById("factorOneSub1Select").innerHTML=
+      
+       `<option value="1">BS</option>
+        <option value="2">Masters</option>`
+      
+    setFactorOneSub2("Problem Solving");
+    setFactorOneSub2Weights("20");
+    setFactorOneSub2LevelsNumber("2");
 
-    setFactorOneSub3("Problem Solving");
-    setFactorOneSub3Weights("20");
-    setFactorOneSub3LevelsNumber("2");
+    document.getElementById("factorOneSub2Select").innerHTML=
+      
+        `<option value="1">No creativity</option>
+        <option value="2">An ideas guy</option>`
+
+    setFactorOneSub3("Experience");
+    setFactorOneSub3Weights("50");
+    setFactorOneSub3LevelsNumber("3");
+
+    document.getElementById("factorOneSub3Select").innerHTML=
+      
+        `<option value="0">None of the above</option>
+        <option value="1">4 years</option>
+        <option value="2">5 years</option>
+        <option value="3">6 years</option>`
     
     setFactorTwo("Responsibility");
     setFactorTwoWeight("40");
 
-    setFactorTwoSub1("Supervisory");
-    setFactorTwoSub1Weights("50");
+    setFactorTwoSub1("Impact of Job");
+    setFactorTwoSub1Weights("30");
     setFactorTwoSub1LevelsNumber("3");
+
+    document.getElementById("factorTwoSub1Select").innerHTML=
+      
+    `<option value="1">No impact</option>
+    <option value="2">Little Impact</option>
+    <option value="3">Saves the World</option>`
 
     setFactorTwoSub2("Fiscal");
     setFactorTwoSub2Weights("20");
     setFactorTwoSub2LevelsNumber("2");
 
-    setFactorTwoSub3("Impact of Job");
-    setFactorTwoSub3Weights("30");
+    document.getElementById("factorTwoSub2Select").innerHTML=
+      
+    `<option value="1">Stingy</option>
+    <option value="2">No budget</option>`
+
+    setFactorTwoSub3("Supervisory");
+    setFactorTwoSub3Weights("50");
     setFactorTwoSub3LevelsNumber("3");
 
-    setFactorTwoSub4LevelsNumber("1");
-
-    setFactorTwoSub5LevelsNumber("1");
-
-    setFactorTwoSub6LevelsNumber("1");
+    document.getElementById("factorTwoSub3Select").innerHTML=
+      
+    `<option value="1">Lower End</option>
+    <option value="2">Middle Management</option>
+    <option value="3">Top of the Org Chart</option>`
 
     setFactorThree("Effort and Demand");
-    setFactorThreeWeight("20");
+    setFactorThreeWeight("30");
 
     setFactorThreeSub1("Mental");
     setFactorThreeSub1Weights("70");
     setFactorThreeSub1LevelsNumber("3");
 
+    document.getElementById("factorThreeSub1Select").innerHTML=
+      
+        `<option value="1">Low Effort</option>
+        <option value="2">Eh Effort</option>
+        <option value="3">High Effort</option>`
+
     setFactorThreeSub2("Hours and Shifts");
     setFactorThreeSub2Weights("30");
     setFactorThreeSub2LevelsNumber("2");
 
-    setFactorThreeSub3("");
-    setFactorThreeSub3Weights("");
-    setFactorThreeSub3LevelsNumber("1");
+    document.getElementById("factorThreeSub2Select").innerHTML=
+      
+        `<option value="1">Used to Short Hours</option>
+        <option value="2">Used to Long Hours</option>`
 
-    setFactorFour("Working Conditions");
-    setFactorFourWeight("10");
+    document.getElementById("third-factor").style.display = "block"
 
-    setFactorFourSub1("Locations");
-    setFactorFourSub1Weights("50");
-    setFactorFourSub1LevelsNumber("3");
+  }
 
-    setFactorFourSub2("Physical");
-    setFactorFourSub2Weights("50");
-    setFactorFourSub2LevelsNumber("2");
+  const [finalOneSub1, setFinalOneSub1] = useState("")
+  const [finalOneSub2, setFinalOneSub2] = useState("")
+  const [finalOneSub3, setFinalOneSub3] = useState("")
 
-    setFactorFourSub3("");
-    setFactorFourSub3Weights("");
-    setFactorFourSub3LevelsNumber("1");
+  const [finalTwoSub1, setFinalTwoSub1] = useState("")
+  const [finalTwoSub2, setFinalTwoSub2] = useState("")
+  const [finalTwoSub3, setFinalTwoSub3] = useState("")
+
+  const [finalThreeSub1, setFinalThreeSub1] = useState("")
+  const [finalThreeSub2, setFinalThreeSub2] = useState("")
+  const [finalScore, setFinalScore] = useState("Evaluate Job Profile")
+
+  function evaluate(){
+      setFinalScore(Math.floor(
+        ((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade +
+        ((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade +
+        ((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade +
+        
+        ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade +
+        ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade +
+        ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade +
+
+        ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade +
+        ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade
+      ))
+  }
+
+  function searchJobCode(){
+    const searchBoxInput = document.getElementById("searchBox")
+
+    if (searchBoxInput){
+
+      if (finalScore > 100){
+        setFinalScore("Evaluate Job Profile")
+        setFinalOneSub1("")
+        setFinalOneSub2("")
+        setFinalOneSub3("")
+
+        setFinalTwoSub1("")
+        setFinalTwoSub2("")
+        setFinalTwoSub3("")
+
+        setFinalThreeSub1("")
+        setFinalThreeSub2("")
+      }
+
+      switch (searchBoxInput.value){
+        case "Eng123":
+          
+          document.getElementById("evaluation-form").style.display = "block"
+          
+          jobProfileEngineer();
+          break;
+        case "Exe123":
+          
+          document.getElementById("evaluation-form").style.display = "block"
+
+          jobProfileExecutive();
+          break;
+        default:
+      }
+    }
   }
 
   return (
     <>
-    <img src={logo} className="LOGO" />
-        <input placeholder="Search..." className="search" />
-    <div>
-    <div className="header-div">
-      <h1 className="page-header">     Job Evaluation Page</h1>
-    </div>
-    <div className="top-buttons">
+      <img src={logo} className="LOGO" />
+          <input placeholder="Search..." className="search" />
       <div>
-        <button className="profile-button" onClick={jobCodeEngineer}>
-          Mechanical Engineer Job Profile
-        </button>
-    </div>
-    <div>
-        <button className="profile-button" onClick={jobCodeExecutive}>
-          Executive Director Job Profile
-        </button>
-    </div>
-    </div>
-
-    </div>
-      {/*form for first factor*/}
-      <div className="form-factor">
-        <div className="test">
-        <div className="header">
-          <input
-            id="new-factor"
-            value={jobName}
-            onChange={(e) => setJobName(e.target.value)}
-            type="String"
-            className="header-input"
-            placeholder="Job Name"
-          ></input>
+        <div className="header-div">
+          <h1 className="page-header">     Job Evaluation Page</h1>
         </div>
 
+        {/* <div className="top-buttons">
+          <div>
+              <button className="profile-button" onClick={jobProfileEngineer}>
+                Mechanical Engineer Job Profile
+              </button>
+          </div>
+
+          <div>
+            <button className="profile-button" onClick={jobProfileExecutive}>
+              Executive Director Job Profile
+            </button>
+          </div>
+        </div> */}
+
         <div className="header">
-          <input
-            id="new-factor"
-            value={jobCode}
-            onChange={(e) => setJobCode(e.target.value)}
-            type="String"
-            className="header-input"
-            placeholder="Jobcode"
-          ></input>
-        </div>
+              
+          <input id="searchBox"></input>
         
-        <div className="header">
-          <input
-            id="new-factor"
-            value={effectiveDate}
-            onChange={(e) => setEffectiveDate(e.target.value)}
-            type="number"
-            className="header-input"
-            placeholder="Effective Date"
-          ></input>
-        </div>
+          <button className="header-input" onClick={searchJobCode}>
+            Search Job Code
+          </button>
 
-        <div className="header">
-          <input
-            id="new-factor"
-            value={totalPoints}
-            onChange={(e) => setTotalPoints(e.target.value)}
-            type="number"
-            className="header-input"
-            placeholder="Points"
-          ></input>
-        </div>
-        </div>
-        {/* Name of First Factor, Weight, and Names of Levels */}
-        <div className="first-factor">
-          <input type="text"
-            id="new-factor"
-            className="input"
-            value={factorOne}
-            onChange={(e) => setFactorOne(e.target.value)} 
-            placeholder="Factor"
-          ></input>
-          <input type="number"
-            id="new-factor"
-            className="input"
-            value={factorOneWeight}
-            onChange={(e) => setFactorOneWeight(e.target.value)} 
-            placeholder="Factor Weight"
-          ></input>
-
-        </div>
-
-
-              <div className="sub-one">
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub1}
-                    onChange={(e) => setFactorOneSub1(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub1Weights}
-                    onChange={(e) => setFactorOneSub1Weights(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Weight"
-                  />
-                </div>
-                {/* 
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub1LevelsName}
-                    onChange={(e) => setFactorOneSub1LevelsName(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor Level Name"
-                  />
-                </div>
-                */}
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub1LevelsNumber}
-                    onChange={(e) => setFactorOneSub1LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub1LevelsGrade}
-                    onChange={(e) => setFactorOneSub1LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                    default="0"
-                  />
-                </div>
-            
-                <h2>
-                  {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade)}
-                </h2>
-              </div>
-
-
-              <div className="sub-one">
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub2}
-                    onChange={(e) => setFactorOneSub2(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub2Weights}
-                    onChange={(e) => setFactorOneSub2Weights(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Weight"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub2LevelsNumber}
-                    onChange={(e) => setFactorOneSub2LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub2LevelsGrade}
-                    onChange={(e) => setFactorOneSub2LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                    default="0"
-                  />
-                </div>
-            
-                <h2>
-                  {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade)}
-                </h2>
-              </div>
-
-
-              <div className="sub-one">
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub3}
-                    onChange={(e) => setFactorOneSub3(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub3Weights}
-                    onChange={(e) => setFactorOneSub3Weights(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Weight"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub3LevelsNumber}
-                    onChange={(e) => setFactorOneSub3LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorOneSub3LevelsGrade}
-                    onChange={(e) => setFactorOneSub3LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                    default="0"
-                  />
-                </div>
-            
-                <h2>
-                  {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade)}
-                </h2>
-              </div>
-
-
-          {val1.map((data,i)=>{
-            return(
-              <div className="sub-one">
-                <div>
-                  <input className="sub-name" onChange={(e=>handleChange(e,i))}/>
-                </div>
-                <div>
-                  <input className="sub-weight" onChange={(e=>handleChange(e,i))}/>
-                </div>
-                <div>
-                  <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-                </div>
-                <div>
-                  <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
-                </div>
-              </div>
-            )
-          })}
-        <div className="new-button">
-          <button className="button" onClick={()=>handleAddOne()}>Add</button>
         </div>
       </div>
 
-      {/*form for second factor*/}
-      <div className="form-factor">
+      <div id="evaluation-form" style={{display:"none"}}>
+        {/* header inputs */}
+        <div className="form-factor">
+          <div className="test">
+            <div className="header">
+                <input
+                id="new-factor"
+                value={jobName}
+                onChange={(e) => setJobName(e.target.value)}
+                type="String"
+                className="header-input"
+                placeholder="Job Name"
+                ></input>
+            </div>
 
-        {/* Name of Factor, Weight, and Names of Levels */}
-        <div className="first-factor">
-          <input type="text"
-            id="new-factor"
-            className="input"
-            value={factorTwo}
-            onChange={(e) => setFactorTwo(e.target.value)} 
-            placeholder="Factor"
-          ></input>
-          <input type="number"
-            id="new-factor"
-            className="input"
-            value={factorTwoWeight}
-            onChange={(e) => setFactorTwoWeight(e.target.value)} 
-            placeholder="Factor Weight"
-          ></input>
+            <div className="header">
+              <input
+                id="new-factor"
+                value={jobCode}
+                onChange={(e) => setJobCode(e.target.value)}
+                type="String"
+                className="header-input"
+                placeholder="Jobcode"
+              ></input>
+            </div>
+          
+            <div className="header">
+              <input
+                id="new-factor"
+                value={effectiveDate}
+                onChange={(e) => setEffectiveDate(e.target.value)}
+                type="String"
+                className="header-input"
+                placeholder="Effective Date"
+              ></input>
+            </div>
 
-        </div>
-
-
-              <div className="sub-one">
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub1}
-                    onChange={(e) => setFactorTwoSub1(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub1Weights}
-                    onChange={(e) => setFactorTwoSub1Weights(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Weight"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub1LevelsNumber}
-                    onChange={(e) => setFactorTwoSub1LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub1LevelsGrade}
-                    onChange={(e) => setFactorTwoSub1LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                    default="0"
-                  />
-                </div>
-            
-                <h2>
-                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade)}
-                </h2>
-              </div>
+            <div className="header">
+              <input
+                id="new-factor"
+                value={totalPoints}
+                onChange={(e) => setTotalPoints(e.target.value)}
+                type="number"
+                className="header-input"
+                placeholder="Points"
+              ></input>
+            </div>
+          </div>
 
 
-              <div className="sub-one">
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub2}
-                    onChange={(e) => setFactorTwoSub2(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub2Weights}
-                    onChange={(e) => setFactorTwoSub2Weights(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Weight"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub2LevelsNumber}
-                    onChange={(e) => setFactorTwoSub2LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub2LevelsGrade}
-                    onChange={(e) => setFactorTwoSub2LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                    default="0"
-                  />
-                </div>
-            
-                <h2>
-                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade)}
-                </h2>
-              </div>
+      {/* Name of First Factor, Weight, and Names of Levels */}
+      <div className="main-factor">
+        <input type="text"
+          id="new-factor"
+          className="input"
+          value={factorOne}
+          onChange={(e) => setFactorOne(e.target.value)} 
+          placeholder="Factor"
+        ></input>
+        <input type="number"
+          id="new-factor"
+          className="input"
+          value={factorOneWeight}
+          onChange={(e) => setFactorOneWeight(e.target.value)} 
+          placeholder="Factor Weight"
+        ></input>
 
-
-              <div className="sub-one">
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub3}
-                    onChange={(e) => setFactorTwoSub3(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub3Weights}
-                    onChange={(e) => setFactorTwoSub3Weights(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Weight"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub3LevelsNumber}
-                    onChange={(e) => setFactorTwoSub3LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub3LevelsGrade}
-                    onChange={(e) => setFactorTwoSub3LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                    default="0"
-                  />
-                </div>
-            
-                <h2>
-                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade)}
-                </h2>
-              </div>
-
-
-              <div className="sub-one">
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub4}
-                    onChange={(e) => setFactorTwoSub4(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub4Weights}
-                    onChange={(e) => setFactorTwoSub4Weights(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Weight"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub4LevelsNumber}
-                    onChange={(e) => setFactorTwoSub4LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub4LevelsGrade}
-                    onChange={(e) => setFactorTwoSub4LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                    default="0"
-                  />
-                </div>
-            
-                <h2>
-                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub4Weights * .01))/factorTwoSub4LevelsNumber) * factorTwoSub4LevelsGrade)}
-                </h2>
-              </div>
-
-
-              <div className="sub-one">
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub5}
-                    onChange={(e) => setFactorTwoSub5(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub5Weights}
-                    onChange={(e) => setFactorTwoSub5Weights(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Weight"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub5LevelsNumber}
-                    onChange={(e) => setFactorTwoSub5LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub5LevelsGrade}
-                    onChange={(e) => setFactorTwoSub5LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                    default="0"
-                  />
-                </div>
-            
-                <h2>
-                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub5Weights * .01))/factorTwoSub5LevelsNumber) * factorTwoSub5LevelsGrade)}
-                </h2>
-              </div>
-
-
-              <div className="sub-one">
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub6}
-                    onChange={(e) => setFactorTwoSub6(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub6Weights}
-                    onChange={(e) => setFactorTwoSub6Weights(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Weight"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub6LevelsNumber}
-                    onChange={(e) => setFactorTwoSub6LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorTwoSub6LevelsGrade}
-                    onChange={(e) => setFactorTwoSub6LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                    default="0"
-                  />
-                </div>
-            
-                <h2>
-                  {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub6Weights * .01))/factorTwoSub6LevelsNumber) * factorTwoSub6LevelsGrade)}
-                </h2>
-              </div>
-
-
-          {val1.map((data,i)=>{
-            return(
-              <div className="sub-one">
-                <div>
-                  <input className="sub-name" onChange={(e=>handleChange(e,i))}/>
-                </div>
-                <div>
-                  <input className="sub-weight" onChange={(e=>handleChange(e,i))}/>
-                </div>
-                <div>
-                  <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-                </div>
-                <div>
-                  <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
-                </div>
-              </div>
-            )
-          })}
-        <div className="new-button">
-          <button className="button" onClick={()=>handleAddOne()}>Add</button>
-        </div>
       </div>
-      
-      {/*form for third factor*/}
-      <div className="form-factor">
+
+            <div className="sub-one">
+              <div>
+                <input
+                  className="sub-name"
+                  value={factorOneSub1}
+                  onChange={(e) => setFactorOneSub1(e.target.value)}
+                  type="String"
+                  placeholder="Sub-factor"
+                />
+              </div>
+
+              <div>
+                <input
+                  className="sub-name"
+                  value={factorOneSub1Weights}
+                  onChange={(e) => setFactorOneSub1Weights(e.target.value)}
+                  type="number"
+                  placeholder="Sub-factor Weight"
+                />
+              </div>
+
+              <div>
+                <select id="factorOneSub1Select" className="header-input" onChange={(e) => setFactorOneSub1LevelsGrade(e.target.value)}>
+                </select>
+              </div>
+          
+              <h2>
+                {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade)}
+
+              </h2>
+            </div>
+
+
+            <div className="sub-one">
+              <div>
+                <input
+                  className="sub-name"
+                  value={factorOneSub2}
+                  onChange={(e) => setFactorOneSub2(e.target.value)}
+                  type="String"
+                  placeholder="Sub-factor"
+                />
+              </div>
+              <div>
+                <input
+                  className="sub-name"
+                  value={factorOneSub2Weights}
+                  onChange={(e) => setFactorOneSub2Weights(e.target.value)}
+                  type="number"
+                  placeholder="Sub-factor Weight"
+                />
+              </div>
+
+              <div>
+                <select id="factorOneSub2Select" className="header-input" onChange={(e) => setFactorOneSub2LevelsGrade(e.target.value)}>
+                </select>
+              </div>
+          
+              <h2>
+                {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade)}
+              </h2>
+            </div>
+
+
+            <div className="sub-one">
+              <div>
+                <input
+                  className="sub-name"
+                  value={factorOneSub3}
+                  onChange={(e) => setFactorOneSub3(e.target.value)}
+                  type="String"
+                  placeholder="Sub-factor"
+                />
+              </div>
+              
+              <div>
+                <input
+                  className="sub-name"
+                  value={factorOneSub3Weights}
+                  onChange={(e) => setFactorOneSub3Weights(e.target.value)}
+                  type="number"
+                  placeholder="Sub-factor Weight"
+                />
+              </div>
+
+              <div>
+                <select id="factorOneSub3Select" className="header-input" onChange={(e) => setFactorOneSub3LevelsGrade(e.target.value)}>
+                </select>
+              </div>
+          
+              <h2>
+                {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade)}
+              </h2>
+            </div>
+        </div>
+
+        {/*form for second factor*/}
+        <div className="form-factor">
 
           {/* Name of Factor, Weight, and Names of Levels */}
-          <div className="first-factor">
+          <div className="main-factor">
             <input type="text"
               id="new-factor"
               className="input"
-              value={factorThree}
-              onChange={(e) => setFactorThree(e.target.value)} 
+              value={factorTwo}
+              onChange={(e) => setFactorTwo(e.target.value)} 
               placeholder="Factor"
             ></input>
-
             <input type="number"
               id="new-factor"
               className="input"
-              value={factorThreeWeight}
-              onChange={(e) => setFactorThreeWeight(e.target.value)} 
+              value={factorTwoWeight}
+              onChange={(e) => setFactorTwoWeight(e.target.value)} 
               placeholder="Factor Weight"
             ></input>
 
           </div>
 
-          <div className="sub-one">
 
+          <div className="sub-one">
             <div>
               <input
                 className="sub-name"
-                value={factorThreeSub1}
-                onChange={(e) => setFactorThreeSub1(e.target.value)}
+                value={factorTwoSub1}
+                onChange={(e) => setFactorTwoSub1(e.target.value)}
                 type="String"
                 placeholder="Sub-factor"
               />
@@ -898,223 +572,20 @@ export default function App() {
             <div>
               <input
                 className="sub-name"
-                value={factorThreeSub1Weights}
-                onChange={(e) => setFactorThreeSub1Weights(e.target.value)}
+                value={factorTwoSub1Weights}
+                onChange={(e) => setFactorTwoSub1Weights(e.target.value)}
                 type="number"
                 placeholder="Sub-factor Weight"
               />
             </div>
 
             <div>
-              <input
-                className="sub-name"
-                value={factorThreeSub1LevelsNumber}
-                onChange={(e) => setFactorThreeSub1LevelsNumber(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Max Level"
-              />
-            </div>
-
-            <div>
-              <input
-                className="sub-name"
-                value={factorThreeSub1LevelsGrade}
-                onChange={(e) => setFactorThreeSub1LevelsGrade(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Level Grade"
-                default="0"
-              />
-            </div>
-            
-            <h2>
-              {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade)}
-            </h2>
-          </div>
-
-
-          <div className="sub-one">
-            <div>
-              <input
-                className="sub-name"
-                value={factorThreeSub2}
-                onChange={(e) => setFactorThreeSub2(e.target.value)}
-                type="String"
-                placeholder="Sub-factor"
-              />
-            </div>
-
-            <div>
-              <input
-                className="sub-name"
-                value={factorThreeSub2Weights}
-                onChange={(e) => setFactorThreeSub2Weights(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Weight"
-              />
-            </div>
-
-            <div>
-              <input
-                className="sub-name"
-                value={factorThreeSub2LevelsNumber}
-                onChange={(e) => setFactorThreeSub2LevelsNumber(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Max Level"
-              />
-            </div>
-
-            <div>
-              <input
-                className="sub-name"
-                value={factorThreeSub2LevelsGrade}
-                onChange={(e) => setFactorThreeSub2LevelsGrade(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Level Grade"
-                default="0"
-              />
-            </div>
-            
-            <h2>
-              {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade)}
-            </h2>
-          </div>
-
-
-              <div className="sub-one">
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorThreeSub3}
-                    onChange={(e) => setFactorThreeSub3(e.target.value)}
-                    type="String"
-                    placeholder="Sub-factor"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorThreeSub3Weights}
-                    onChange={(e) => setFactorThreeSub3Weights(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Weight"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorThreeSub3LevelsNumber}
-                    onChange={(e) => setFactorThreeSub3LevelsNumber(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Max Level"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="sub-name"
-                    value={factorThreeSub3LevelsGrade}
-                    onChange={(e) => setFactorThreeSub3LevelsGrade(e.target.value)}
-                    type="number"
-                    placeholder="Sub-factor Level Grade"
-                    default="0"
-                  />
-                </div>
-            
-                <h2>
-                  {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub3Weights * .01))/factorThreeSub3LevelsNumber) * factorThreeSub3LevelsGrade)}
-                </h2>
-              </div>
-
-
-              {val1.map((data,i)=>{
-                return(
-                  <div className="sub-one">
-                    <div>
-                      <input className="sub-name" onChange={(e=>handleChange(e,i))}/>
-                    </div>
-                    <div>
-                      <input className="sub-weight" onChange={(e=>handleChange(e,i))}/>
-                    </div>
-                    <div>
-                      <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-                    </div>
-                    <div>
-                      <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
-                    </div>
-                  </div>
-                )
-              })}
-          <div className="new-button">
-            <button className="button" onClick={()=>handleAddOne()}>Add</button>
-          </div>
-      </div>
-      
-      {/*form for fourth factor*/}
-      <div className="form-factor">
-
-          {/* Name of Factor, Weight, and Names of Levels */}
-          <div className="first-factor">
-            <input type="text"
-              id="new-factor"
-              className="input"
-              value={factorFour}
-              onChange={(e) => setFactorFour(e.target.value)} 
-              placeholder="Factor"
-            ></input>
-            
-            <input type="number"
-              id="new-factor"
-              className="input"
-              value={factorFourWeight}
-              onChange={(e) => setFactorFourWeight(e.target.value)} 
-              placeholder="Factor Weight"
-            ></input>
-
-          </div>
-
-          <div className="sub-one">
-
-            <div>
-              <input
-                className="sub-name"
-                value={factorFourSub1}
-                onChange={(e) => setFactorFourSub1(e.target.value)}
-                type="String"
-                placeholder="Sub-factor"
-              />
-            </div>
-
-            <div>
-              <input
-                className="sub-name"
-                value={factorFourSub1Weights}
-                onChange={(e) => setFactorFourSub1Weights(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Weight"
-              />
-            </div>
-
-            <div>
-              <input
-                className="sub-name"
-                value={factorFourSub1LevelsNumber}
-                onChange={(e) => setFactorFourSub1LevelsNumber(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Max Level"
-              />
-            </div>
-            <div>
-              <input
-                className="sub-name"
-                value={factorFourSub1LevelsGrade}
-                onChange={(e) => setFactorFourSub1LevelsGrade(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Level Grade"
-                default="0"
-              />
+                <select id="factorTwoSub1Select" className="header-input" onChange={(e) => setFactorTwoSub1LevelsGrade(e.target.value)}>
+                </select>
             </div>
         
             <h2>
-              {Math.floor(((((totalPoints * (factorFourWeight * .01)) * factorFourSub1Weights * .01))/factorFourSub1LevelsNumber) * factorFourSub1LevelsGrade)}
+              {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade)}
             </h2>
           </div>
 
@@ -1123,8 +594,8 @@ export default function App() {
             <div>
               <input
                 className="sub-name"
-                value={factorFourSub2}
-                onChange={(e) => setFactorFourSub2(e.target.value)}
+                value={factorTwoSub2}
+                onChange={(e) => setFactorTwoSub2(e.target.value)}
                 type="String"
                 placeholder="Sub-factor"
               />
@@ -1133,35 +604,20 @@ export default function App() {
             <div>
               <input
                 className="sub-name"
-                value={factorFourSub2Weights}
-                onChange={(e) => setFactorFourSub2Weights(e.target.value)}
+                value={factorTwoSub2Weights}
+                onChange={(e) => setFactorTwoSub2Weights(e.target.value)}
                 type="number"
                 placeholder="Sub-factor Weight"
               />
             </div>
 
             <div>
-              <input
-                className="sub-name"
-                value={factorFourSub2LevelsNumber}
-                onChange={(e) => setFactorFourSub2LevelsNumber(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Max Level"
-              />
-            </div>
-            <div>
-              <input
-                className="sub-name"
-                value={factorFourSub2LevelsGrade}
-                onChange={(e) => setFactorFourSub2LevelsGrade(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Level Grade"
-                default="0"
-              />
+                <select id="factorTwoSub2Select" className="header-input" onChange={(e) => setFactorTwoSub2LevelsGrade(e.target.value)}>
+                </select>
             </div>
         
             <h2>
-              {Math.floor(((((totalPoints * (factorFourWeight * .01)) * factorFourSub2Weights * .01))/factorFourSub2LevelsNumber) * factorFourSub2LevelsGrade)}
+              {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade)}
             </h2>
           </div>
 
@@ -1170,99 +626,127 @@ export default function App() {
             <div>
               <input
                 className="sub-name"
-                value={factorFourSub3}
-                onChange={(e) => setFactorFourSub3(e.target.value)}
+                value={factorTwoSub3}
+                onChange={(e) => setFactorTwoSub3(e.target.value)}
                 type="String"
                 placeholder="Sub-factor"
               />
             </div>
-                
+
             <div>
               <input
                 className="sub-name"
-                value={factorFourSub3Weights}
-                onChange={(e) => setFactorFourSub3Weights(e.target.value)}
+                value={factorTwoSub3Weights}
+                onChange={(e) => setFactorTwoSub3Weights(e.target.value)}
                 type="number"
                 placeholder="Sub-factor Weight"
               />
             </div>
 
             <div>
-              <input
-                className="sub-name"
-                value={factorFourSub3LevelsNumber}
-                onChange={(e) => setFactorFourSub3LevelsNumber(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Max Level"
-                />
+                <select id="factorTwoSub3Select" className="header-input" onChange={(e) => setFactorTwoSub3LevelsGrade(e.target.value)}>
+                </select>
             </div>
-                
-            <div>
-              <input
-                className="sub-name"
-                value={factorFourSub3LevelsGrade}
-                onChange={(e) => setFactorFourSub3LevelsGrade(e.target.value)}
-                type="number"
-                placeholder="Sub-factor Level Grade"
-                default="0"
-                />
-            </div>
-            
+        
             <h2>
-              {Math.floor(((((totalPoints * (factorFourWeight * .01)) * factorFourSub3Weights * .01))/factorFourSub3LevelsNumber) * factorFourSub3LevelsGrade)}
+              {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade)}
             </h2>
           </div>
 
+        {/*form for third factor*/}
+        <div className="form-factor" id="third-factor">
 
-          {val1.map((data,i)=>{
-            return(
-              <div className="sub-one">
-                <div>
-                  <input className="sub-name" onChange={(e=>handleChange(e,i))}/>
-                </div>
-                <div>
-                  <input className="sub-weight" onChange={(e=>handleChange(e,i))}/>
-                </div>
-                <div>
-                  <input className="sub-point" onChange={(e=>handleChange(e,i))}/>
-                </div>
-                <div>
-                  <input className="sub-des" onChange={(e=>handleChange(e,i))}/>
-                </div>
+            {/* Name of Factor, Weight, and Names of Levels */}
+            <div className="main-factor">
+              <input type="text"
+                id="new-factor"
+                className="input"
+                value={factorThree}
+                onChange={(e) => setFactorThree(e.target.value)} 
+                placeholder="Factor"
+              ></input>
+
+              <input type="number"
+                id="new-factor"
+                className="input"
+                value={factorThreeWeight}
+                onChange={(e) => setFactorThreeWeight(e.target.value)} 
+                placeholder="Factor Weight"
+              ></input>
+
+            </div>
+
+            <div className="sub-one">
+
+              <div>
+                <input
+                  className="sub-name"
+                  value={factorThreeSub1}
+                  onChange={(e) => setFactorThreeSub1(e.target.value)}
+                  type="String"
+                  placeholder="Sub-factor"
+                />
               </div>
-            )
-          })}
 
-          <div className="new-button">
-            <button className="button" onClick={()=>handleAddOne()}>Add</button>
+              <div>
+                <input
+                  className="sub-name"
+                  value={factorThreeSub1Weights}
+                  onChange={(e) => setFactorThreeSub1Weights(e.target.value)}
+                  type="number"
+                  placeholder="Sub-factor Weight"
+                />
+              </div>
+
+              <div>
+                <select id="factorThreeSub1Select" className="header-input" onChange={(e) => setFactorThreeSub1LevelsGrade(e.target.value)}>
+                </select>
+              </div>
+              
+              <h2>
+                {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade)}
+              </h2>
+            </div>
+
+
+            <div className="sub-one">
+              <div>
+                <input
+                  className="sub-name"
+                  value={factorThreeSub2}
+                  onChange={(e) => setFactorThreeSub2(e.target.value)}
+                  type="String"
+                  placeholder="Sub-factor"
+                />
+              </div>
+
+              <div>
+                <input
+                  className="sub-name"
+                  value={factorThreeSub2Weights}
+                  onChange={(e) => setFactorThreeSub2Weights(e.target.value)}
+                  type="number"
+                  placeholder="Sub-factor Weight"
+                />
+              </div>
+
+              <div>
+                <select id="factorThreeSub2Select" className="header-input" onChange={(e) => setFactorThreeSub2LevelsGrade(e.target.value)}>
+                </select>
+              </div>
+              
+              <h2>
+                {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade)}
+              </h2>
+            </div>
+
           </div>
+        </div>
+
+        <h1 className="footer">
+          <button className="button" onClick={evaluate}>{finalScore}</button>
+        </h1>
       </div>
-
-
-      <h1 className="footer">
-            {
-              Math.floor(
-                ((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade +
-                ((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade +
-                ((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade +
-                
-                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade +
-                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade +
-                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade +
-                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub4Weights * .01))/factorTwoSub4LevelsNumber) * factorTwoSub4LevelsGrade +
-                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub5Weights * .01))/factorTwoSub5LevelsNumber) * factorTwoSub5LevelsGrade +
-                ((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub6Weights * .01))/factorTwoSub6LevelsNumber) * factorTwoSub6LevelsGrade +
-                
-                ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade +
-                ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade +
-                ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub3Weights * .01))/factorThreeSub3LevelsNumber) * factorThreeSub3LevelsGrade +
-
-                ((((totalPoints * (factorFourWeight * .01)) * factorFourSub1Weights * .01))/factorFourSub1LevelsNumber) * factorFourSub1LevelsGrade +
-                ((((totalPoints * (factorFourWeight * .01)) * factorFourSub2Weights * .01))/factorFourSub2LevelsNumber) * factorFourSub2LevelsGrade +
-                ((((totalPoints * (factorFourWeight * .01)) * factorFourSub3Weights * .01))/factorFourSub3LevelsNumber) * factorFourSub3LevelsGrade
-              )
-            }
-      </h1>
     </>
   )
 }
