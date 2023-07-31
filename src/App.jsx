@@ -276,23 +276,24 @@ export default function App() {
 
   return (
     <>
-    <div className="design">
-        <img src={logo} className="LOGO" />
-      <div>
+    <img src={logo} className="LOGO" />
         <input placeholder="Search..." className="search" />
-      </div>
-    </div>
     <div>
     <div className="header-div">
       <h1 className="page-header">     Job Evaluation Page</h1>
     </div>
-    <button className="button" onClick={jobCodeEngineer}>
-      Mechanical Engineer Job Profile
-    </button>
-
-    <button className="button" onClick={jobCodeExecutive}>
-      Executive Director Job Profile
-    </button>
+    <div className="top-buttons">
+      <div>
+        <button className="profile-button" onClick={jobCodeEngineer}>
+          Mechanical Engineer Job Profile
+        </button>
+    </div>
+    <div>
+        <button className="profile-button" onClick={jobCodeExecutive}>
+          Executive Director Job Profile
+        </button>
+    </div>
+    </div>
 
     </div>
       {/*form for first factor*/}
