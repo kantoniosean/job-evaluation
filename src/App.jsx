@@ -421,6 +421,14 @@ export default function App() {
 
 
       {/* Name of First Factor, Weight, and Names of Levels */}
+      <div className="label">
+          <div>
+              <label>Factor Name:</label>
+          </div>
+          <div>
+              <label>Factor Weight:</label>
+          </div>
+        </div>
       <div className="main-factor">
         <input type="text"
           id="new-factor"

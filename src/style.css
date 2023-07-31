@@ -32,6 +32,14 @@ body {
     /* animation: bg-animation 3s infinite alternate; */
 }
 
+.label {
+    display: flex;
+    gap: 260px;
+    padding-left: 90px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
 .header-div {
     padding-top: 0.1%;
     padding-bottom: 0.1%;
