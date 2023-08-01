@@ -25,6 +25,7 @@
     background-color: #f9f5f8;
   }
 
+
 .LOGO {
     width: 170px;
     padding-right: 450px;
@@ -42,6 +43,16 @@ body {
     gap: 50px;
 }
 
+.top-label {
+    display: flex;
+    gap: 240px;
+    padding-left: 80px;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .label {
     display: flex;
     gap: 240px;
@@ -49,6 +60,10 @@ body {
     font-size: 25px;
     padding-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.score {
+    padding-left: 1%;
 }
 
 .submit-button {
@@ -133,6 +148,7 @@ body {
     border-radius: 8px;
     padding-right: 50px;
     position: relative;
+    width: 340px;
 }
 
 .input {
@@ -199,10 +215,10 @@ body {
 .test {
     display: flex;
     padding-left: 4%;
-    padding-top: 20px;
+    padding-top: 5px;
     padding-bottom: 50px;
     display: flex;
-    column-gap: 75px;
+    column-gap: 60px;
 }
 
 .button {
