@@ -390,16 +390,16 @@ export default function App() {
         {/* header inputs */}
         <div className="top-label">
           <div>
-              <label>Factor Name:</label>
+              <label>Job Name:</label>
           </div>
           <div>
-              <label>Factor Weight:</label>
+              <label>Jobcode:</label>
           </div>
           <div>
-              <label>Factor Weight:</label>
+              <label>Effective Date:</label>
           </div>
           <div>
-              <label>Factor Weight:</label>
+              <label>Total Possible Score:</label>
           </div>
         </div>
         <div className="form-factor">
