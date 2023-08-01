@@ -45,8 +45,8 @@ body {
 
 .top-label {
     display: flex;
-    gap: 240px;
-    padding-left: 80px;
+    gap: 15%;
+    padding-left: 4%;
     font-size: 25px;
     padding-top: 20px;
     padding-bottom: 15px;
