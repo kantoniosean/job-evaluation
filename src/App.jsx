@@ -339,6 +339,7 @@ export default function App() {
   return (
     <>
       <img src={logo} className="LOGO" />
+      <label className="space"></label>
           <input placeholder="Search..." className="search" />
       <div>
         <div className="header-div">
@@ -360,14 +361,17 @@ export default function App() {
         </div> */}
 
         <div className="header">
-              
-          <input id="searchBox"></input>
-        
-          <button className="header-input" onClick={searchJobCode}>
+        <div className="top">
+        <div>
+          <input className="input" id="searchBox"></input>
+        </div> 
+        <div>
+          <button className="submit-button" onClick={searchJobCode}>
             Search Job Code
           </button>
-
+          </div>
         </div>
+      </div>
       </div>
 
       <div id="evaluation-form" style={{display:"none"}}>
@@ -444,9 +448,18 @@ export default function App() {
           onChange={(e) => setFactorOneWeight(e.target.value)} 
           placeholder="Factor Weight"
         ></input>
-
+      </div>   
+      <div className="level">
+        <div>
+          <label>Skill Name:</label>
+        </div>
+        <div>
+          <label>Skill Weight:</label>
+        </div>
+        <div>
+          <label>Sub-factor Level:</label>
+        </div>
       </div>
-
             <div className="sub-one">
               <div>
                 <input
@@ -469,11 +482,11 @@ export default function App() {
               </div>
 
               <div>
-                <select id="factorOneSub1Select" className="header-input" onChange={(e) => setFactorOneSub1LevelsGrade(e.target.value)}>
+                <select id="factorOneSub1Select" className="select" onChange={(e) => setFactorOneSub1LevelsGrade(e.target.value)}>
                 </select>
               </div>
           
-              <h2>
+              <h2 assName="answer">
                 {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade)}
 
               </h2>
@@ -501,11 +514,11 @@ export default function App() {
               </div>
 
               <div>
-                <select id="factorOneSub2Select" className="header-input" onChange={(e) => setFactorOneSub2LevelsGrade(e.target.value)}>
+                <select id="factorOneSub2Select" className="select" onChange={(e) => setFactorOneSub2LevelsGrade(e.target.value)}>
                 </select>
               </div>
           
-              <h2>
+              <h2 assName="answer">
                 {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade)}
               </h2>
             </div>
@@ -533,11 +546,11 @@ export default function App() {
               </div>
 
               <div>
-                <select id="factorOneSub3Select" className="header-input" onChange={(e) => setFactorOneSub3LevelsGrade(e.target.value)}>
+                <select id="factorOneSub3Select" className="select" onChange={(e) => setFactorOneSub3LevelsGrade(e.target.value)}>
                 </select>
               </div>
           
-              <h2>
+              <h2 className="answer">
                 {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub3Weights * .01))/factorOneSub3LevelsNumber) * factorOneSub3LevelsGrade)}
               </h2>
             </div>
@@ -547,6 +560,14 @@ export default function App() {
         <div className="form-factor">
 
           {/* Name of Factor, Weight, and Names of Levels */}
+          <div className="label">
+            <div>
+                <label>Factor Name:</label>
+            </div>
+            <div>
+                <label>Factor Weight:</label>
+            </div>
+          </div>
           <div className="main-factor">
             <input type="text"
               id="new-factor"
@@ -565,6 +586,17 @@ export default function App() {
 
           </div>
 
+        <div className="level">
+          <div>
+            <label>Skill Name:</label>
+          </div>
+          <div>
+            <label>Skill Weight:</label>
+          </div>
+          <div>
+            <label>Sub-factor Level:</label>
+          </div>
+        </div>
 
           <div className="sub-one">
             <div>
@@ -588,11 +620,11 @@ export default function App() {
             </div>
 
             <div>
-                <select id="factorTwoSub1Select" className="header-input" onChange={(e) => setFactorTwoSub1LevelsGrade(e.target.value)}>
+                <select id="factorTwoSub1Select" className="select" onChange={(e) => setFactorTwoSub1LevelsGrade(e.target.value)}>
                 </select>
             </div>
         
-            <h2>
+            <h2 assName="answer">
               {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub1Weights * .01))/factorTwoSub1LevelsNumber) * factorTwoSub1LevelsGrade)}
             </h2>
           </div>
@@ -620,11 +652,11 @@ export default function App() {
             </div>
 
             <div>
-                <select id="factorTwoSub2Select" className="header-input" onChange={(e) => setFactorTwoSub2LevelsGrade(e.target.value)}>
+                <select id="factorTwoSub2Select" className="select" onChange={(e) => setFactorTwoSub2LevelsGrade(e.target.value)}>
                 </select>
             </div>
         
-            <h2>
+            <h2 assName="answer">
               {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade)}
             </h2>
           </div>
@@ -652,11 +684,11 @@ export default function App() {
             </div>
 
             <div>
-                <select id="factorTwoSub3Select" className="header-input" onChange={(e) => setFactorTwoSub3LevelsGrade(e.target.value)}>
+                <select id="factorTwoSub3Select" className="select" onChange={(e) => setFactorTwoSub3LevelsGrade(e.target.value)}>
                 </select>
             </div>
         
-            <h2>
+            <h2 assName="answer">
               {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub3Weights * .01))/factorTwoSub3LevelsNumber) * factorTwoSub3LevelsGrade)}
             </h2>
           </div>
@@ -665,6 +697,14 @@ export default function App() {
         <div className="form-factor" id="third-factor">
 
             {/* Name of Factor, Weight, and Names of Levels */}
+        <div className="label">
+          <div>
+              <label>Factor Name:</label>
+          </div>
+          <div>
+              <label>Factor Weight:</label>
+          </div>
+        </div>
             <div className="main-factor">
               <input type="text"
                 id="new-factor"
@@ -684,6 +724,17 @@ export default function App() {
 
             </div>
 
+        <div className="level">
+          <div>
+            <label>Skill Name:</label>
+          </div>
+          <div>
+            <label>Skill Weight:</label>
+          </div>
+          <div>
+            <label>Sub-factor Level:</label>
+          </div>
+        </div>
             <div className="sub-one">
 
               <div>
@@ -707,11 +758,11 @@ export default function App() {
               </div>
 
               <div>
-                <select id="factorThreeSub1Select" className="header-input" onChange={(e) => setFactorThreeSub1LevelsGrade(e.target.value)}>
+                <select id="factorThreeSub1Select" className="select" onChange={(e) => setFactorThreeSub1LevelsGrade(e.target.value)}>
                 </select>
               </div>
               
-              <h2>
+              <h2 assName="answer">
                 {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade)}
               </h2>
             </div>
@@ -739,11 +790,11 @@ export default function App() {
               </div>
 
               <div>
-                <select id="factorThreeSub2Select" className="header-input" onChange={(e) => setFactorThreeSub2LevelsGrade(e.target.value)}>
+                <select id="factorThreeSub2Select" className="select" onChange={(e) => setFactorThreeSub2LevelsGrade(e.target.value)}>
                 </select>
               </div>
               
-              <h2>
+              <h2 assName="answer">
                 {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade)}
               </h2>
             </div>
