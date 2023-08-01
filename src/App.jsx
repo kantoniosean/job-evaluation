@@ -111,7 +111,8 @@ export default function App() {
 
     document.getElementById("factorOneSub1Select").innerHTML=
       
-       `<option value="1">BS</option>
+       `<option value="0">None</option>
+       <option value="1">BS</option>
         <option value="2">Masters</option>
         <option value="3">PHD</option>`
       
@@ -121,7 +122,8 @@ export default function App() {
 
     document.getElementById("factorOneSub2Select").innerHTML=
       
-        `<option value="1">Louisiana License</option>
+        `<option value="0">None</option>
+        <option value="1">Louisiana License</option>
         <option value="2">Professional Engineer (PE)</option>`
 
     setFactorOneSub3("Experience");
@@ -144,7 +146,8 @@ export default function App() {
 
     document.getElementById("factorTwoSub1Select").innerHTML=
       
-        `<option value="1">Low Safety Needs</option>
+        `<option value="0">N/A</option>
+        <option value="1">Low Safety Needs</option>
         <option value="2">Medium Safety Needs</option>
         <option value="3">High Safety Needs</option>`
 
@@ -154,7 +157,8 @@ export default function App() {
 
     document.getElementById("factorTwoSub2Select").innerHTML=
       
-        `<option value="1">Worker Drone</option>
+        `<option value="0">N/A</option>
+        <option value="1">Worker Drone</option>
         <option value="2">Middle Management</option>
         <option value="3">Autonomous Worker</option>`
 
@@ -164,7 +168,8 @@ export default function App() {
 
     document.getElementById("factorTwoSub3Select").innerHTML=
       
-        `<option value="1">Lower End</option>
+        `<option value="0">N/A</option>
+        <option value="1">Lower End</option>
         <option value="2">Middle Management</option>
         <option value="3">Top of the Org Chart</option>`
 
@@ -191,7 +196,8 @@ export default function App() {
 
     document.getElementById("factorOneSub1Select").innerHTML=
       
-       `<option value="1">BS</option>
+       `<option value="0">None</option>
+       <option value="1">BS</option>
         <option value="2">Masters</option>`
       
     setFactorOneSub2("Problem Solving");
@@ -200,7 +206,8 @@ export default function App() {
 
     document.getElementById("factorOneSub2Select").innerHTML=
       
-        `<option value="1">No creativity</option>
+        `<option value="0">N/A</option>
+        <option value="1">No creativity</option>
         <option value="2">An ideas guy</option>`
 
     setFactorOneSub3("Experience");
@@ -223,9 +230,10 @@ export default function App() {
 
     document.getElementById("factorTwoSub1Select").innerHTML=
       
-    `<option value="1">No impact</option>
-    <option value="2">Little Impact</option>
-    <option value="3">Saves the World</option>`
+      `<option value="0">N/A</option>
+      <option value="1">No impact</option>
+      <option value="2">Little Impact</option>
+      <option value="3">Saves the World</option>`
 
     setFactorTwoSub2("Fiscal");
     setFactorTwoSub2Weights("20");
@@ -233,8 +241,9 @@ export default function App() {
 
     document.getElementById("factorTwoSub2Select").innerHTML=
       
-    `<option value="1">Stingy</option>
-    <option value="2">No budget</option>`
+      `<option value="0">N/A</option>
+      <option value="1">Stingy</option>
+      <option value="2">No budget</option>`
 
     setFactorTwoSub3("Supervisory");
     setFactorTwoSub3Weights("50");
@@ -242,9 +251,10 @@ export default function App() {
 
     document.getElementById("factorTwoSub3Select").innerHTML=
       
-    `<option value="1">Lower End</option>
-    <option value="2">Middle Management</option>
-    <option value="3">Top of the Org Chart</option>`
+      `<option value="0">N/A</option>
+      <option value="1">Lower End</option>
+      <option value="2">Middle Management</option>
+      <option value="3">Top of the Org Chart</option>`
 
     setFactorThree("Effort and Demand");
     setFactorThreeWeight("30");
@@ -255,7 +265,8 @@ export default function App() {
 
     document.getElementById("factorThreeSub1Select").innerHTML=
       
-        `<option value="1">Low Effort</option>
+        `<option value="0">N/A</option>
+        <option value="1">Low Effort</option>
         <option value="2">Eh Effort</option>
         <option value="3">High Effort</option>`
 
@@ -265,7 +276,8 @@ export default function App() {
 
     document.getElementById("factorThreeSub2Select").innerHTML=
       
-        `<option value="1">Used to Short Hours</option>
+        `<option value="0">N/A</option>
+        <option value="1">Used to Short Hours</option>
         <option value="2">Used to Long Hours</option>`
 
     document.getElementById("third-factor").style.display = "block"
@@ -376,6 +388,20 @@ export default function App() {
 
       <div id="evaluation-form" style={{display:"none"}}>
         {/* header inputs */}
+        <div className="top-label">
+          <div>
+              <label>Factor Name:</label>
+          </div>
+          <div>
+              <label>Factor Weight:</label>
+          </div>
+          <div>
+              <label>Factor Weight:</label>
+          </div>
+          <div>
+              <label>Factor Weight:</label>
+          </div>
+        </div>
         <div className="form-factor">
           <div className="test">
             <div className="header">
@@ -407,7 +433,7 @@ export default function App() {
                 onChange={(e) => setEffectiveDate(e.target.value)}
                 type="String"
                 className="header-input"
-                placeholder="Effective Date"
+                placeholder="MM-DD-YYYY"
               ></input>
             </div>
 
@@ -459,6 +485,9 @@ export default function App() {
         <div>
           <label>Sub-factor Level:</label>
         </div>
+        <div>
+            <label className="score">Score:</label>
+        </div>
       </div>
             <div className="sub-one">
               <div>
@@ -485,13 +514,10 @@ export default function App() {
                 <select id="factorOneSub1Select" className="select" onChange={(e) => setFactorOneSub1LevelsGrade(e.target.value)}>
                 </select>
               </div>
-          
-              <h2 assName="answer">
-                {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade)}
-
-              </h2>
+                <h2 assName="answer">
+                  {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade)}
+                </h2>  
             </div>
-
 
             <div className="sub-one">
               <div>
@@ -655,8 +681,7 @@ export default function App() {
                 <select id="factorTwoSub2Select" className="select" onChange={(e) => setFactorTwoSub2LevelsGrade(e.target.value)}>
                 </select>
             </div>
-        
-            <h2 assName="answer">
+            <h2 >
               {Math.floor(((((totalPoints * (factorTwoWeight * .01)) * factorTwoSub2Weights * .01))/factorTwoSub2LevelsNumber) * factorTwoSub2LevelsGrade)}
             </h2>
           </div>
