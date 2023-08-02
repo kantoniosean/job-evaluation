@@ -45,21 +45,6 @@ export default function App() {
   const [factorTwoSub3LevelsNumber, setFactorTwoSub3LevelsNumber] = useState("")
   const [factorTwoSub3LevelsGrade, setFactorTwoSub3LevelsGrade] = useState("")
 
-  const [factorTwoSub4, setFactorTwoSub4] = useState("")
-  const [factorTwoSub4Weights, setFactorTwoSub4Weights] = useState("")
-  const [factorTwoSub4LevelsNumber, setFactorTwoSub4LevelsNumber] = useState("")
-  const [factorTwoSub4LevelsGrade, setFactorTwoSub4LevelsGrade] = useState("")
-
-  const [factorTwoSub5, setFactorTwoSub5] = useState("")
-  const [factorTwoSub5Weights, setFactorTwoSub5Weights] = useState("")
-  const [factorTwoSub5LevelsNumber, setFactorTwoSub5LevelsNumber] = useState("")
-  const [factorTwoSub5LevelsGrade, setFactorTwoSub5LevelsGrade] = useState("")
-
-  const [factorTwoSub6, setFactorTwoSub6] = useState("")
-  const [factorTwoSub6Weights, setFactorTwoSub6Weights] = useState("")
-  const [factorTwoSub6LevelsNumber, setFactorTwoSub6LevelsNumber] = useState("")
-  const [factorTwoSub6LevelsGrade, setFactorTwoSub6LevelsGrade] = useState("")
-
   const [factorThree, setFactorThree] = useState("")
   const [factorThreeWeight, setFactorThreeWeight] = useState("")
 
@@ -72,29 +57,6 @@ export default function App() {
   const [factorThreeSub2Weights, setFactorThreeSub2Weights] = useState("")
   const [factorThreeSub2LevelsNumber, setFactorThreeSub2LevelsNumber] = useState("")
   const [factorThreeSub2LevelsGrade, setFactorThreeSub2LevelsGrade] = useState("")
-
-  const [factorThreeSub3, setFactorThreeSub3] = useState("")
-  const [factorThreeSub3Weights, setFactorThreeSub3Weights] = useState("")
-  const [factorThreeSub3LevelsNumber, setFactorThreeSub3LevelsNumber] = useState("")
-  const [factorThreeSub3LevelsGrade, setFactorThreeSub3LevelsGrade] = useState("")
-
-  const [factorFour, setFactorFour] = useState("")
-  const [factorFourWeight, setFactorFourWeight] = useState("")
-
-  const [factorFourSub1, setFactorFourSub1] = useState("")
-  const [factorFourSub1Weights, setFactorFourSub1Weights] = useState("")
-  const [factorFourSub1LevelsNumber, setFactorFourSub1LevelsNumber] = useState("")
-  const [factorFourSub1LevelsGrade, setFactorFourSub1LevelsGrade] = useState("")
-
-  const [factorFourSub2, setFactorFourSub2] = useState("")
-  const [factorFourSub2Weights, setFactorFourSub2Weights] = useState("")
-  const [factorFourSub2LevelsNumber, setFactorFourSub2LevelsNumber] = useState("")
-  const [factorFourSub2LevelsGrade, setFactorFourSub2LevelsGrade] = useState("")
-
-  const [factorFourSub3, setFactorFourSub3] = useState("")
-  const [factorFourSub3Weights, setFactorFourSub3Weights] = useState("")
-  const [factorFourSub3LevelsNumber, setFactorFourSub3LevelsNumber] = useState("")
-  const [factorFourSub3LevelsGrade, setFactorFourSub3LevelsGrade] = useState("")
 
   function jobProfileEngineer(){
     setJobName("Mechanical Engineer");
@@ -123,7 +85,7 @@ export default function App() {
     document.getElementById("factorOneSub2Select").innerHTML=
       
         `<option value="0">None</option>
-        <option value="1">Louisiana License</option>
+        <option value="1">State License</option>
         <option value="2">Professional Engineer (PE)</option>`
 
     setFactorOneSub3("Experience");
@@ -132,7 +94,7 @@ export default function App() {
 
     document.getElementById("factorOneSub3Select").innerHTML=
       
-        `<option value="0">None of the above</option>
+        `<option value="0">None</option>
         <option value="1">4 years</option>
         <option value="2">5 years</option>
         <option value="3">6 years</option>`
@@ -147,9 +109,9 @@ export default function App() {
     document.getElementById("factorTwoSub1Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Low Safety Needs</option>
-        <option value="2">Medium Safety Needs</option>
-        <option value="3">High Safety Needs</option>`
+        <option value="1">Do Not Bend</option>
+        <option value="2">Stain-Resistant</option>
+        <option value="3">Circus Strongman</option>`
 
     setFactorTwoSub2("Degree of Independence");
     setFactorTwoSub2Weights("40");
@@ -159,8 +121,8 @@ export default function App() {
       
         `<option value="0">N/A</option>
         <option value="1">Worker Drone</option>
-        <option value="2">Middle Management</option>
-        <option value="3">Autonomous Worker</option>`
+        <option value="2">Autonomous Unit</option>
+        <option value="3">Rogue Agent</option>`
 
     setFactorTwoSub3("Supervisory");
     setFactorTwoSub3Weights("20");
@@ -169,14 +131,17 @@ export default function App() {
     document.getElementById("factorTwoSub3Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Lower End</option>
-        <option value="2">Middle Management</option>
-        <option value="3">Top of the Org Chart</option>`
+        <option value="1">Lone Wolf</option>
+        <option value="2">Pulling the Strings</option>
+        <option value="3">Puppet Master</option>`
 
     document.getElementById("third-factor").style.display = "none"
 
+    setFactorThreeWeight("0")
+    setFactorThreeSub1Weights("50");
     setFactorThreeSub1LevelsNumber("1");
 
+    setFactorThreeSub2Weights("50");
     setFactorThreeSub2LevelsNumber("1");
 
   }
@@ -207,8 +172,8 @@ export default function App() {
     document.getElementById("factorOneSub2Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">No creativity</option>
-        <option value="2">An ideas guy</option>`
+        <option value="1">Sub-Brick</option>
+        <option value="2">Know-It-All</option>`
 
     setFactorOneSub3("Experience");
     setFactorOneSub3Weights("50");
@@ -216,7 +181,7 @@ export default function App() {
 
     document.getElementById("factorOneSub3Select").innerHTML=
       
-        `<option value="0">None of the above</option>
+        `<option value="0">None</option>
         <option value="1">4 years</option>
         <option value="2">5 years</option>
         <option value="3">6 years</option>`
@@ -230,20 +195,21 @@ export default function App() {
 
     document.getElementById("factorTwoSub1Select").innerHTML=
       
-      `<option value="0">N/A</option>
-      <option value="1">No impact</option>
-      <option value="2">Little Impact</option>
-      <option value="3">Saves the World</option>`
+        `<option value="0">N/A</option>
+        <option value="1">Stays at Home</option>
+        <option value="2">Solves World Hunger</option>
+        <option value="3">Saves the World Every Weekend</option>`
 
+    // I assume the more fiscally responsible you are, the higher the level
     setFactorTwoSub2("Fiscal");
     setFactorTwoSub2Weights("20");
     setFactorTwoSub2LevelsNumber("2");
 
     document.getElementById("factorTwoSub2Select").innerHTML=
       
-      `<option value="0">N/A</option>
-      <option value="1">Stingy</option>
-      <option value="2">No budget</option>`
+        `<option value="0">N/A</option>
+        <option value="1">Oaf</option>
+        <option value="2">Stingy</option>`
 
     setFactorTwoSub3("Supervisory");
     setFactorTwoSub3Weights("50");
@@ -251,10 +217,10 @@ export default function App() {
 
     document.getElementById("factorTwoSub3Select").innerHTML=
       
-      `<option value="0">N/A</option>
-      <option value="1">Lower End</option>
-      <option value="2">Middle Management</option>
-      <option value="3">Top of the Org Chart</option>`
+        `<option value="0">N/A</option>
+        <option value="1">Lone Wolf</option>
+        <option value="2">Pulling the Strings</option>
+        <option value="3">Puppet Master</option>`
 
     setFactorThree("Effort and Demand");
     setFactorThreeWeight("30");
@@ -266,9 +232,9 @@ export default function App() {
     document.getElementById("factorThreeSub1Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Low Effort</option>
-        <option value="2">Eh Effort</option>
-        <option value="3">High Effort</option>`
+        <option value="1">Crumbly</option>
+        <option value="2">Tough-as-nails</option>
+        <option value="3">Bullet Proof</option>`
 
     setFactorThreeSub2("Hours and Shifts");
     setFactorThreeSub2Weights("30");
@@ -277,26 +243,17 @@ export default function App() {
     document.getElementById("factorThreeSub2Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Used to Short Hours</option>
-        <option value="2">Used to Long Hours</option>`
+        <option value="1">Volunteering at your Local Co-op</option>
+        <option value="2">Joining the Army</option>`
 
     document.getElementById("third-factor").style.display = "block"
 
   }
 
-  const [finalOneSub1, setFinalOneSub1] = useState("")
-  const [finalOneSub2, setFinalOneSub2] = useState("")
-  const [finalOneSub3, setFinalOneSub3] = useState("")
-
-  const [finalTwoSub1, setFinalTwoSub1] = useState("")
-  const [finalTwoSub2, setFinalTwoSub2] = useState("")
-  const [finalTwoSub3, setFinalTwoSub3] = useState("")
-
-  const [finalThreeSub1, setFinalThreeSub1] = useState("")
-  const [finalThreeSub2, setFinalThreeSub2] = useState("")
-  const [finalScore, setFinalScore] = useState("Evaluate Job Profile")
+  const [finalScore, setFinalScore] = useState("0")
 
   function evaluate(){
+    if (weightCheck()){
       setFinalScore(Math.floor(
         ((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade +
         ((((totalPoints * (factorOneWeight * .01)) * factorOneSub2Weights * .01))/factorOneSub2LevelsNumber) * factorOneSub2LevelsGrade +
@@ -309,6 +266,62 @@ export default function App() {
         ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade +
         ((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade
       ))
+
+      document.getElementById("error-message").innerHTML=""
+    }
+  }
+
+  function weightCheck(){
+    if (parseInt(factorOneWeight) + parseInt(factorTwoWeight) + parseInt(factorThreeWeight) > 100){
+      document.getElementById("error-message").innerHTML=
+      
+        `Factor Weights are too high! Weights must be 100!`
+        return false
+    }
+
+    if (parseInt(factorOneWeight) + parseInt(factorTwoWeight) + parseInt(factorThreeWeight) < 100){
+      document.getElementById("error-message").innerHTML=
+      
+        `Factor Weights are too low! Weights must be 100!`
+        return false
+    }
+    if (parseInt(factorOneSub1Weights) + parseInt(factorOneSub2Weights) + parseInt(factorOneSub3Weights) > 100){
+      document.getElementById("error-message").innerHTML=
+          
+        factorOne + ` Sub-Factor Weights are too high! Sub-Factor Weights must be 100!`
+        return false
+    }
+    if (parseInt(factorOneSub1Weights) + parseInt(factorOneSub2Weights) + parseInt(factorOneSub3Weights) < 100){
+      document.getElementById("error-message").innerHTML=
+  
+        factorOne + ` Sub-Factor Weights are too low! Sub-Factor Weights must be 100!`
+        return false
+    }
+    if (parseInt(factorTwoSub1Weights) + parseInt(factorTwoSub2Weights) + parseInt(factorTwoSub3Weights) > 100){
+      document.getElementById("error-message").innerHTML=
+
+        factorTwo + ` Sub-Factor Weights are too high! Sub-Factor Weights must be 100!`
+        return false
+    }
+    if (parseInt(factorTwoSub1Weights) + parseInt(factorTwoSub2Weights) + parseInt(factorTwoSub3Weights) < 100){
+      document.getElementById("error-message").innerHTML=
+
+        factorTwo + ` Sub-Factor Weights are too low! Sub-Factor Weights must be 100!`
+        return false
+    }
+    if (parseInt(factorThreeSub1Weights) + parseInt(factorThreeSub2Weights) > 100){
+      document.getElementById("error-message").innerHTML=
+
+        factorThree + ` Sub-Factor Weights are too high! Sub-Factor Weights must be 100!`
+        return false
+    }
+    if (parseInt(factorThreeSub1Weights) + parseInt(factorThreeSub2Weights) < 100){
+      document.getElementById("error-message").innerHTML=
+
+        factorThree + ` Sub-Factor Weights is too low! Sub-Factor Weights must be 100!`
+        return false
+    }
+    return true
   }
 
   function searchJobCode(){
@@ -316,18 +329,19 @@ export default function App() {
 
     if (searchBoxInput){
 
-      if (finalScore > 100){
-        setFinalScore("Evaluate Job Profile")
-        setFinalOneSub1("")
-        setFinalOneSub2("")
-        setFinalOneSub3("")
+      if (finalScore > 0){
+        setFinalScore("0")
+        setFactorOneSub1LevelsGrade("0")
+        setFactorOneSub2LevelsGrade("0")
+        setFactorOneSub3LevelsGrade("0")
 
-        setFinalTwoSub1("")
-        setFinalTwoSub2("")
-        setFinalTwoSub3("")
+        setFactorTwoSub1LevelsGrade("0")
+        setFactorTwoSub2LevelsGrade("0")
+        setFactorTwoSub3LevelsGrade("0")
 
-        setFinalThreeSub1("")
-        setFinalThreeSub2("")
+        setFactorThreeSub1LevelsGrade("0")
+        setFactorThreeSub2LevelsGrade("0")
+        document.getElementById("error-message").innerHTML=""
       }
 
       switch (searchBoxInput.value){
@@ -358,20 +372,6 @@ export default function App() {
           <h1 className="page-header">     Job Evaluation Page</h1>
         </div>
 
-        {/* <div className="top-buttons">
-          <div>
-              <button className="profile-button" onClick={jobProfileEngineer}>
-                Mechanical Engineer Job Profile
-              </button>
-          </div>
-
-          <div>
-            <button className="profile-button" onClick={jobProfileExecutive}>
-              Executive Director Job Profile
-            </button>
-          </div>
-        </div> */}
-
         <div className="header">
         <div className="top">
         <div>
@@ -379,7 +379,7 @@ export default function App() {
         </div> 
         <div>
           <button className="submit-button" onClick={searchJobCode}>
-            Search Job Code
+            Search Jobcode
           </button>
           </div>
         </div>
@@ -389,17 +389,17 @@ export default function App() {
       <div id="evaluation-form" style={{display:"none"}}>
         {/* header inputs */}
         <div className="top-label">
-          <div>
+        <div>
               <label>Job Name:</label>
           </div>
-          <div>
+          <div className="jobcode">
               <label>Jobcode:</label>
           </div>
-          <div>
+          <div className="eff">
               <label>Effective Date:</label>
           </div>
-          <div>
-              <label>Total Possible Score:</label>
+          <div className="total-poss-points">
+              <label>Total Possible Points:</label>
           </div>
         </div>
         <div className="form-factor">
@@ -437,7 +437,7 @@ export default function App() {
               ></input>
             </div>
 
-            <div className="header">
+            <div className="factor-weight">
               <input
                 id="new-factor"
                 value={totalPoints}
@@ -477,16 +477,16 @@ export default function App() {
       </div>   
       <div className="level">
         <div>
-          <label>Skill Name:</label>
+          <label>Sub-factor Name:</label>
         </div>
         <div>
-          <label>Skill Weight:</label>
+          <label>Sub-factor Weight:</label>
         </div>
         <div>
           <label>Sub-factor Level:</label>
         </div>
         <div>
-            <label className="score">Score:</label>
+            <label >Sub-factor Points:</label>
         </div>
       </div>
             <div className="sub-one">
@@ -514,7 +514,7 @@ export default function App() {
                 <select id="factorOneSub1Select" className="select" onChange={(e) => setFactorOneSub1LevelsGrade(e.target.value)}>
                 </select>
               </div>
-                <h2 assName="answer">
+                <h2 className="answer">
                   {Math.floor(((((totalPoints * (factorOneWeight * .01)) * factorOneSub1Weights * .01))/factorOneSub1LevelsNumber) * factorOneSub1LevelsGrade)}
                 </h2>  
             </div>
@@ -614,13 +614,16 @@ export default function App() {
 
         <div className="level">
           <div>
-            <label>Skill Name:</label>
+            <label>Sub-factor Name:</label>
           </div>
           <div>
-            <label>Skill Weight:</label>
+            <label>Sub-factor Weight:</label>
           </div>
           <div>
             <label>Sub-factor Level:</label>
+          </div>
+          <div>
+            <label>Sub-factor Points:</label>
           </div>
         </div>
 
@@ -751,14 +754,17 @@ export default function App() {
 
         <div className="level">
           <div>
-            <label>Skill Name:</label>
+            <label>Sub-factor Name:</label>
           </div>
           <div>
-            <label>Skill Weight:</label>
+            <label>Sub-factor Weight:</label>
           </div>
           <div>
             <label>Sub-factor Level:</label>
           </div>
+            <div>
+                <label>Sub-factor Points:</label>
+            </div>
         </div>
             <div className="sub-one">
 
@@ -787,7 +793,7 @@ export default function App() {
                 </select>
               </div>
               
-              <h2 assName="answer">
+              <h2 className="answer">
                 {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub1Weights * .01))/factorThreeSub1LevelsNumber) * factorThreeSub1LevelsGrade)}
               </h2>
             </div>
@@ -819,7 +825,7 @@ export default function App() {
                 </select>
               </div>
               
-              <h2 assName="answer">
+              <h2 className="answer">
                 {Math.floor(((((totalPoints * (factorThreeWeight * .01)) * factorThreeSub2Weights * .01))/factorThreeSub2LevelsNumber) * factorThreeSub2LevelsGrade)}
               </h2>
             </div>
@@ -827,9 +833,18 @@ export default function App() {
           </div>
         </div>
 
-        <h1 className="footer">
-          <button className="button" onClick={evaluate}>{finalScore}</button>
-        </h1>
+        <h1 className="footer" id="error-message"></h1>
+
+    <div className="final">
+      <div>
+          <button className="button" onClick={evaluate}>Evaluate Job</button>
+        </div>
+        <div>
+          <h2 className="footer">
+          {finalScore}
+        </h2>
+      </div>
+      </div>
       </div>
     </>
   )

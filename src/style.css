@@ -45,9 +45,9 @@ body {
 
 .top-label {
     display: flex;
-    gap: 15%;
-    padding-left: 4%;
-    font-size: 25px;
+    gap: 5%;
+    padding-left: 75px;
+    font-size: 40px;
     padding-top: 20px;
     padding-bottom: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -55,9 +55,9 @@ body {
 
 .label {
     display: flex;
-    gap: 240px;
-    padding-left: 100px;
-    font-size: 25px;
+    gap: 220px;
+    padding-left: 90px;
+    font-size: 30px;
     padding-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -66,23 +66,11 @@ body {
     padding-left: 1%;
 }
 
-.submit-button {
-    padding: 5%;
-    padding-left: 50px;
-    padding-right: 50px;
-    color: white;
-    background-color: #ffa526;
-    border: 2px;
-    border-radius: 35px;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .level {
     display: flex;
-    gap: 290px;
+    gap: 210px;
     padding-left: 90px;
-    font-size: 22px;
+    font-size: 25px;
     padding-top: 20px;
     padding-bottom: 1px;
     font-family: Arial, Helvetica, sans-serif;
@@ -121,11 +109,6 @@ body {
     border-radius: 4px;
 }
 
-.footer {
-    display:flex;
-    justify-content: center;
-}
-
 .main-factor {
     padding-left: 5%;
     padding-bottom: 0.5%;
@@ -140,6 +123,15 @@ body {
     flex-direction: column;
     border: 2px;
     border-radius: 8px;
+} 
+
+.factor-weight {
+    display:flex;
+    justify-content: center;
+    padding-bottom: 0.5%;
+    border-style: groove;
+    border-color: #F9F5F6;
+    border-radius: 4px;
 }
 
 .select {
@@ -171,12 +163,6 @@ body {
 
 .newFactor {
     color: #F9F5F6;
-}
-
-.new-button {
-    padding-left: 36.5%;
-    padding-bottom: 50px;
-    padding-top: 10px;
 }
 
 .sub-name {
@@ -218,7 +204,7 @@ body {
     padding-top: 5px;
     padding-bottom: 50px;
     display: flex;
-    column-gap: 60px;
+    gap: 5%;
 }
 
 .button {
@@ -233,6 +219,12 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.new-button {
+    padding-left: 36.5%;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
 .top-buttons {
     display: flex;
     gap: 250px;
@@ -240,7 +232,19 @@ body {
     padding-top: 0.5%;
 }
 
-.profile-button {
+.submit-button {
+    padding: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    background-color: #ffa526;
+    border: 2px;
+    border-radius: 35px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.evaluate-button {
     padding: 6%;
     padding-left: 90px;
     padding-right: 90px;
@@ -250,4 +254,25 @@ body {
     border-radius: 35px;
     font-size: x-large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.jobcode {
+    padding-left: 7.5%;
+} 
+
+.eff {
+    padding-left: 9.5%;
+}
+
+.total-poss-points {
+   padding-left: 4%;
+}
+
+.final {
+    display: flex;
+    gap: 30%;
+}
+
+.footer {
+    font-size: 50px;
 }
