@@ -379,7 +379,7 @@ export default function App() {
         </div> 
         <div>
           <button className="submit-button" onClick={searchJobCode}>
-            Search Job Code
+            Search Jobcode
           </button>
           </div>
         </div>
@@ -389,17 +389,17 @@ export default function App() {
       <div id="evaluation-form" style={{display:"none"}}>
         {/* header inputs */}
         <div className="top-label">
-          <div>
-              <label>Factor Name:</label>
+        <div>
+              <label>Job Name:</label>
           </div>
-          <div>
-              <label>Factor Weight:</label>
+          <div className="jobcode">
+              <label>Jobcode:</label>
           </div>
-          <div>
-              <label>Factor Weight:</label>
+          <div className="eff">
+              <label>Effective Date:</label>
           </div>
-          <div>
-              <label>Factor Weight:</label>
+          <div className="total-poss-points">
+              <label>Total Possible Points:</label>
           </div>
         </div>
         <div className="form-factor">
@@ -437,7 +437,7 @@ export default function App() {
               ></input>
             </div>
 
-            <div className="header">
+            <div className="factor-weight">
               <input
                 id="new-factor"
                 value={totalPoints}
@@ -477,16 +477,16 @@ export default function App() {
       </div>   
       <div className="level">
         <div>
-          <label>Skill Name:</label>
+          <label>Sub-factor Name:</label>
         </div>
         <div>
-          <label>Skill Weight:</label>
+          <label>Sub-factor Weight:</label>
         </div>
         <div>
           <label>Sub-factor Level:</label>
         </div>
         <div>
-            <label className="score">Score:</label>
+            <label >Sub-factor Points:</label>
         </div>
       </div>
             <div className="sub-one">
@@ -614,13 +614,16 @@ export default function App() {
 
         <div className="level">
           <div>
-            <label>Skill Name:</label>
+            <label>Sub-factor Name:</label>
           </div>
           <div>
-            <label>Skill Weight:</label>
+            <label>Sub-factor Weight:</label>
           </div>
           <div>
             <label>Sub-factor Level:</label>
+          </div>
+          <div>
+            <label>Sub-factor Points:</label>
           </div>
         </div>
 
@@ -751,14 +754,17 @@ export default function App() {
 
         <div className="level">
           <div>
-            <label>Skill Name:</label>
+            <label>Sub-factor Name:</label>
           </div>
           <div>
-            <label>Skill Weight:</label>
+            <label>Sub-factor Weight:</label>
           </div>
           <div>
             <label>Sub-factor Level:</label>
           </div>
+            <div>
+                <label>Sub-factor Points:</label>
+            </div>
         </div>
             <div className="sub-one">
 
@@ -829,10 +835,16 @@ export default function App() {
 
         <h1 className="footer" id="error-message"></h1>
 
-        <h1 className="footer">
-          Evaluate Job
-          <button className="button" onClick={evaluate}>{finalScore}</button>
-        </h1>
+    <div className="final">
+      <div>
+          <button className="button" onClick={evaluate}>Evaluate Job</button>
+        </div>
+        <div>
+          <h2 className="footer">
+          {finalScore}
+        </h2>
+      </div>
+      </div>
       </div>
     </>
   )
