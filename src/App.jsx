@@ -349,14 +349,14 @@ export default function App() {
       }
 
       switch (searchBoxInput.value){
-        case "Eng 123":
+        case "Eng123":
           
           document.getElementById("evaluation-form").style.display = "block"
           document.getElementById("error-message").innerHTML=""
 
           jobProfileEngineer();
           break;
-        case "Exe 123":
+        case "Exe123":
           
           document.getElementById("evaluation-form").style.display = "block"
           document.getElementById("error-message").innerHTML=""
