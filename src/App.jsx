@@ -109,9 +109,9 @@ export default function App() {
     document.getElementById("factorTwoSub1Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Do Not Bend</option>
-        <option value="2">Stain-Resistant</option>
-        <option value="3">Bring it on!</option>`
+        <option value="1">Low</option>
+        <option value="2">Moderate</option>
+        <option value="3">High</option>`
 
     setFactorTwoSub2("Degree of Independence");
     setFactorTwoSub2Weights("40");
@@ -120,9 +120,9 @@ export default function App() {
     document.getElementById("factorTwoSub2Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Worker Drone</option>
-        <option value="2">Autonomous Unit</option>
-        <option value="3">Rogue Agent</option>`
+        <option value="1">High Supervision</option>
+        <option value="2">Moderate Supervision</option>
+        <option value="3">Independent</option>`
 
     setFactorTwoSub3("Supervisory");
     setFactorTwoSub3Weights("20");
@@ -131,9 +131,9 @@ export default function App() {
     document.getElementById("factorTwoSub3Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Lone Wolf</option>
-        <option value="2">Puppet Master</option>
-        <option value="3">Commander-in-Chief</option>`
+        <option value="1">Low</option>
+        <option value="2">Moderate</option>
+        <option value="3">High</option>`
 
     document.getElementById("third-factor").style.display = "none"
 
@@ -172,8 +172,8 @@ export default function App() {
     document.getElementById("factorOneSub2Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Sub-Brick</option>
-        <option value="2">Know-It-All</option>`
+        <option value="1">Light Complexity</option>
+        <option value="2">High Complexity</option>`
 
     setFactorOneSub3("Experience");
     setFactorOneSub3Weights("50");
@@ -196,9 +196,9 @@ export default function App() {
     document.getElementById("factorTwoSub1Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Stays at Home</option>
-        <option value="2">Solves World Hunger</option>
-        <option value="3">Saves the World Every Weekend</option>`
+        <option value="1">Low</option>
+        <option value="2">Moderate</option>
+        <option value="3">High</option>`
 
     // I assume the more fiscally responsible you are, the higher the level
     setFactorTwoSub2("Fiscal");
@@ -208,8 +208,8 @@ export default function App() {
     document.getElementById("factorTwoSub2Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Oaf</option>
-        <option value="2">Stingy</option>`
+        <option value="1">Low Responsibility</option>
+        <option value="2">High Responsibility</option>`
 
     setFactorTwoSub3("Supervisory");
     setFactorTwoSub3Weights("50");
@@ -218,9 +218,9 @@ export default function App() {
     document.getElementById("factorTwoSub3Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Lone Wolf</option>
-        <option value="2">Pulling the Strings</option>
-        <option value="3">Puppet Master</option>`
+        <option value="1">Low</option>
+        <option value="2">Moderate</option>
+        <option value="3">High</option>`
 
     setFactorThree("Effort and Demand");
     setFactorThreeWeight("30");
@@ -232,9 +232,9 @@ export default function App() {
     document.getElementById("factorThreeSub1Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">In Tune</option>
-        <option value="2">Tin-foil Hat</option>
-        <option value="3">Mind Palace</option>`
+        <option value="1">Moderate Reasoning</option>
+        <option value="2">High Reasoning</option>
+        <option value="3">Stress-Resistant</option>`
 
     setFactorThreeSub2("Hours and Shifts");
     setFactorThreeSub2Weights("30");
@@ -243,8 +243,8 @@ export default function App() {
     document.getElementById("factorThreeSub2Select").innerHTML=
       
         `<option value="0">N/A</option>
-        <option value="1">Volunteering at your Local Co-op</option>
-        <option value="2">Joining the Army as a Recruit</option>`
+        <option value="1">Normal</option>
+        <option value="2">Irregular</option>`
 
     document.getElementById("third-factor").style.display = "block"
 
@@ -447,7 +447,7 @@ export default function App() {
               <input
                 id="new-factor"
                 value={totalPoints}
-                onChange={(e) => setTotalPoints(e.target.value)}
+                onChange={(e) => {resetOutput(e); setTotalPoints(e.target.value)}}
                 type="number"
                 className="header-input"
                 placeholder="Points"
