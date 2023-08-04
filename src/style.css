@@ -50,7 +50,7 @@ body {
     font-size: 40px;
     padding-top: 20px;
     padding-bottom: 15px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .label {
@@ -59,7 +59,7 @@ body {
     padding-left: 90px;
     font-size: 30px;
     padding-bottom: 20px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-top: 35px;
 }
 
@@ -74,14 +74,14 @@ body {
     font-size: 25px;
     padding-top: 20px;
     padding-bottom: 1px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header-div {
     padding-top: 0.1%;
     padding-bottom: 0.1%;
     background-color: #046dd6;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .page-header {
@@ -226,7 +226,7 @@ body {
     border: 2px;
     border-radius: 35px;
     font-size: x-large;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .new-button {
@@ -251,7 +251,7 @@ body {
     border: 2px;
     border-radius: 35px;
     font-size: medium;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .evaluate-button {
@@ -263,7 +263,7 @@ body {
     border: 2px;
     border-radius: 35px;
     font-size: x-large;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .jobcode {
@@ -307,7 +307,7 @@ body {
 .footer-error-message {
     padding-top: 40px;
     padding-left: 30%;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: red;
 }
